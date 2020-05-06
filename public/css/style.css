@@ -1,3 +1,40 @@
+body{
+    color: #646464;
+    font-family: Nunito;
+
+}
+header{
+    color: #f8f8f8;
+    background-image: url('../assets/img/banner-forrest.png');
+}
+nav{
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+}
+.nav-item{
+    color:white;
+}
+@keyframes fade-out-nav {
+    from{background-color: #02675A;}
+    to {background-color: transparent;}
+  }
+.nav-bg-transparent{
+    background-color: transparent;
+    animation-name: fade-out-nav;
+    animation-duration: 0.8s;
+}
+@keyframes fade-in-nav {
+    from {background-color: transparent;}
+    to {background-color: #02675A;}
+  }
+  
+.nav-bg-green{
+    background-color: #02675A;
+    animation-name: fade-in-nav;
+    animation-duration: 0.8s;
+}
+
 #logo{
     width:50%;
 }
