@@ -6,7 +6,6 @@ var scroll = 0;
 
 $(window).scroll(function (event) {
     scroll = $(window).scrollTop();
-    console.log(scroll);
     
 });
 
@@ -18,7 +17,6 @@ $(window).scroll(function () {
         }
 
         if ($(this).scrollTop() < 20 && fadedIn) {
-            console.log("scopaio");
             fadeoutNav();
         }
     }
@@ -46,7 +44,6 @@ navButton.onclick = function () {
         }
     }
     else {
-        console.log("sono qui");
         
         if (scroll < 150) {
             fadeoutNav();
