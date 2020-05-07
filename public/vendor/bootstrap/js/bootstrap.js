@@ -929,6 +929,7 @@
       return slideEvent;
     };
 
+    /* modiificato
     _proto._setActiveIndicatorElement = function _setActiveIndicatorElement(element) {
       if (this._indicatorsElement) {
         var indicators = [].slice.call(this._indicatorsElement.querySelectorAll(Selector$2.ACTIVE));
@@ -941,7 +942,7 @@
         }
       }
     };
-
+*/
     _proto._slide = function _slide(direction, element) {
       var _this4 = this;
 
