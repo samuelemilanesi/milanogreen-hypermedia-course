@@ -1,0 +1,62 @@
+Pagine necessarie al sito nella sua interezza---tutte le volte che mi riferisco a un form esterno è per non entrare in conflitto con la P-IDM
+
+legenda:
+* index page
++ landmark raggiungibile da index page
+- pagine contenute nei landkmarks , un meno in più per ogni step (tipo matrioska)
+
+*Home page*
+
+-Supportaci
+pagina in cui c'è un modulo per la donazione e due righe in cui si racconta cosa ci facciamo (tipo progetti in cui saranno spesi quei soldi e puoi decidere di selezionarne uno in particolare)
+
+
++Unisciti a noi (get involved)
+-come (how to)
+pagina iniziale di introduzione in cui si spiega come fare a unirsi nelle varie modalità, ogni modalità ha il suo link, le modalità sono 3 , si può unirsi come individuo privato (come individuo) come azienda/scuola/famiglia (come gruppo) oppure si può applicare per il lavoro (lavora con noi )
+
+--come individuo
+--come gruppo
+due pagine uguali in pratica in cui sono presentile spiegazioni di cosa si fa da volontari in entrambi i casi ( con una serie di sottoparagrafi descrittivi) e un bottone che rimanda a un form esterno da compilare per iscriversi
+
+--lavora con noi
+pagina che descrive le posizioni nel sito con bottone per applicare (mandare cv ecc in form esterno )
+
++Associazione
+-Chi siamo (About)
+pagina che fa da riassunto dell associazione , una sorta di cv storico-grafico, con 2 rimandi ulteriori ai nostri partners e alle locations che usiamo e di cui ci occupiamo. La cosa piu importante che contiene è la sezione staff che fa transition page per l'iconografica delle persone che collaborano con l'associazione
+
+--partners
+--locations (%trovare equivalente italiano)
+due pagine uguali in cui sono semplicemente elencati partners e locations, con magari due righe di testo a supporto
+
+--staff (pagina di transione all people)
+pagina con griglia cliccabile di un numero di persone comprese tra 6-24 ognugna con il nome e il ruolo
+
+---Persona (person, %forse più elegante chiamare anche questa pagina staff? o membri magari)
+pagina di una persona con nome, motto, ruolo, contatti e foto. linkati ci sono gli eventi organizzati e i servizi gestiti(che sono due pagine da fare in cui compaiono a griglia (una riga x3 colonne in scorrimento) gli eventi e i servizi relativi alla persona.
+[ci sono tante triplette di pagine di questo tipo quante persone ci sono in staff]
+
++Servizi
+-servizi  (pagina di transizione all services)
+pagina in cui sono esposti tutti i servizi (in griglia) supportati da un testo sovrastante più minimale possibile
+
+--servizio
+pagina relativa al singolo servizio, contenente foto, descrizione accattivante e contatto (indirizzo mail) di una persona dedita a rispondere a domande o curiosità o qualunque rispeto a quel servizio
+come per persona la pagina è associata a team e eventi correlati a quel servizio
+[ci sono tante triplette di pagine quanti servizi]
+
++Eventi
+- Eventi
+pagina contenente tutti gli eventi in colonna con foto, nome, data, intro e tipo. In cima alla paginac'è il filtro.
+
+--evento
+pagina del singolo evento contenente tutte le informazioni: indirizzo data,contatto, descrizione e i servizi correlati (3)
+il contatto è un transition link alla pagina persona a cui il contatto si riferisce.
+[tante pagine quanti eventi]
+
+
++Contatti
+-una pagina con i principali contatti dell'associazione, banalmente un sottogruppo di staff o simili
+
+
