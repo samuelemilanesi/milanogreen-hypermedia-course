@@ -1,0 +1,107 @@
+<!-- Filter bar -->
+
+<div class="container">
+
+    <div class="filter-bar col-lg- mx-auto">
+      <div class="row py-0 align-items-center">
+
+          <ul  class="nav navbar bytype-filter">
+            <li>
+              <p class="font-italic ">Tipo: </p>
+            </li>
+            <li>
+              <button class="filter-btn">Tutti </button>
+            </li>
+            <li class="">
+              <img src="../assets/img/events/education.svg" alt="Educazione"/>
+              <p>Educazione</p>
+            </li>
+
+            <li class=" ">
+              <img src="../assets/img/events/volontariato.svg" alt="Volontariato"/>
+              <p>Volontariato</p>
+            </li>
+
+            <li class="">
+              <img src="../assets/img/events/explore.svg" alt="Visite"/>
+              <p>Visite</p>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="row align-items-center">
+
+          <ul  class="bymonth-filter">
+            <li>
+              <p class="font-italic">Mese: </p>
+            </li>
+            <li class="">
+              
+              <p>Educazione</p>
+            </li>
+
+            <li class=" ">
+             
+              <p>Volontariato</p>
+            </li>
+
+            <li class="">
+              
+              <p>Visite</p>
+            </li>
+          </ul>
+          
+        </div>
+
+
+
+      </div>
+
+  </div>
+
+
+
+
+
+  ////////////////////////////////
+
+
+.filter-bar ul{
+    padding:1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.filter-bar li{
+    display: inline-block;
+    padding:1em;
+}
+.filter-bar li:hover{
+    fill: red;
+}
+.bytype-filter img{
+    display: inline-block;
+    min-width: 20px;
+    width: 3em;
+    margin-right: 1em;
+    fill:red;
+}
+.bytype-filter p{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.filter-btn{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding:0.2em 0.5em 0.2em 0.5em;
+    border-radius: 0.4em;
+    border: none;
+    color: #f8f8f8;
+    background-color: rgb(125, 130, 136);
+}
+.filter-btn:hover{
+    background-color: aqua;
+}

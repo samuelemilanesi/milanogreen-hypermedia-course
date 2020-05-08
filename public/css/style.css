@@ -6,9 +6,7 @@ body{
 header{
     padding-top: 156px;
     color: #f8f8f8;
-    background-image: url('../assets/img/banner-forrest.png');
     width: 100%;
-    background-color: red !important;
 }
 .mask{
     left:0;
@@ -77,32 +75,12 @@ nav{
     font-size: 2em;
     text-align: center;
     padding: 0 0 2em 0;
-
 }
 
 #logo{
     width:50%;
 }
 
-.deck{
-    text-align: center;
-}
-.card{
-    border: none;
-    display: inline-block;
-}
-.card img{
-    border-radius: 3em;
-}
-.card-text{
-    font-size: 1.3em;
-    color: black;
-    text-align: center;
-}
-.footer-mask{
-    bottom:0;
-    left:0;
-}
 #bottom-path{
     top:0;
 }

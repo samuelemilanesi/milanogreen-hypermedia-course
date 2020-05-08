@@ -1,0 +1,62 @@
+header{
+    background-image: url('../assets/img/banner-forrest.png');
+}
+
+
+.filter-bar{
+    background-color: rgb(102, 137, 138);
+    color: #f8f8f8;
+    border-radius: 1em;
+}
+
+.bytype-row{
+    background-color: #5F9EA0;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding:1em;
+}
+.bymonth-row{
+    padding:1em;
+}
+
+
+.bytype-filter{
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom;
+    padding: 0.5em ;
+    border-radius: 1em;
+    text-align: center; 
+    line-height: 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.bytype-filter:hover{
+    background-color: rgb(118, 177, 22);
+}
+.bytype-filter:active{
+    background-color: rgb(118, 177, 22);
+}
+
+
+.bytype-filter img{
+    display: inline-block;
+    width: 20%;
+    min-width: 30px;
+    line-height: normal;
+    margin-right: 0.5em;
+}
+.bytype-filter p{
+    display: inline-block;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.filter-label{
+    padding-top: 0.75rem;
+    font-size:1.4em;
+    font-weight: 600;
+    font-style: oblique;
+}
+

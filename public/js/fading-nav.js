@@ -2,6 +2,7 @@ var fadedIn = false;
 var menuOpened = false;
 var navButton = document.getElementById("nav-button");
 var scroll = 0;
+var navbar = document.getElementById("mainNav")
 
 
 $(window).scroll(function (event) {
@@ -30,14 +31,16 @@ $(window).scroll(function () {
 });
 
 fadeinNav = function () {
-    $('nav').removeClass('nav-bg-trasparent');
-    $('nav').addClass('nav-bg-green');
+    console.log(navbar);
+    
+    navbar.classList.remove("nav-bg-trasparent");
+    navbar.classList.add("nav-bg-green");
     fadedIn = true;
 }
 
 fadeoutNav = function () {
-    $('nav').removeClass('nav-bg-green');
-    $('nav').addClass('nav-bg-transparent');
+    navbar.classList.remove("nav-bg-green")
+    navbar.classList.add("nav-bg-transparent");
     fadedIn = false;
 }
 
