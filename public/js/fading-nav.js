@@ -7,9 +7,16 @@ var scroll = 0;
 $(window).scroll(function (event) {
     scroll = $(window).scrollTop();
     
+    
 });
 
-
+window.onload = function(){
+    scroll = $(window).scrollTop();
+    if ($(this).scrollTop() > 150) {
+        fadeinNav();
+    }
+    
+}
 $(window).scroll(function () {
     if (!this.menuOpened) {
         if ($(this).scrollTop() > 150 && !fadedIn) {

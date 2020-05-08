@@ -18,8 +18,8 @@ section{
 }
 nav{
    width: 100%;
-    // border-bottom-left-radius: 1em;
-    // border-bottom-right-radius: 1em ;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em ;
 }
 .nav-item{
     font-size: 1.1em;
@@ -38,14 +38,21 @@ nav{
 }
 @keyframes fade-in-nav {
     from {background-color: transparent;}
-    to {background-color: rgba(2,103,90,1);}
-  }
+    to {background-color: rgba(2,103,90,1);
+        box-shadow: 2px 2px 4px 3px rgba(56, 56, 56,0.8);
+
+}
+
+}
   
 .nav-bg-green{
     background-color: rgba(2,103,90,1);
     animation-name: fade-in-nav;
     animation-duration: 0.8s;
+    box-shadow: 2px 2px 4px 3px rgba(56, 56, 56,0.8);
+
 }
+
 .banner-title h1{
     padding: 0.7em 0 0.7em 0;
     font-size: 4em;
@@ -69,6 +76,71 @@ nav{
     width:50%;
 }
 
+.deck{
+    text-align: center;
+}
+.card{
+    border: none;
+    display: inline-block;
+}
+.card img{
+    border-radius: 3em;
+}
+.card-text{
+    font-size: 1.3em;
+    color: black;
+    text-align: center;
+}
+.footer-mask{
+    bottom:0;
+    left:0;
+}
+#bottom-path{
+    top:0;
+}
+footer{
+    background-color: #02675A ;
+}
+.footer-logo{
+    display: inline-block;
+    padding-right: 1em;
+}
+.footer-nav{
+    display: inline-block;
+    color: #f8f8f8;
+}
+.footer-nav h3{
+    font-weight: bold;
+}
+.footer-nav li{
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-nav hr{
+    border: 1.2px solid #f8f8f8;
+    border-radius: 2px;
+}
+.footer-nav ul{
+    list-style-type: none;
+    text-align: left;
+}
+.footer-nav a{
+    color: #f8f8f8;
+}
+.footer-nav a:hover{
+    color: #D0E562;
+    text-decoration: none;
+}
+
+.social-li{
+    display: inline-block;
+}
+.social-icon{
+    min-width: 40px;
+    width: 80%;
+    display: inline-block;
+}
 
 /*
 

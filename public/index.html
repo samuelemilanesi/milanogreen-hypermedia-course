@@ -11,7 +11,9 @@
   <title>Association - MilanoGreen</title>
 
   <!-- Import fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -64,7 +66,9 @@
     </div>
     <!--//END Section title banner -->
 
-    
+
+
+
     <div class="mask">
       <svg viewBox="0 0 1433 150">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -85,8 +89,6 @@
 
   </header>
 
-
- 
 
 
 
@@ -112,13 +114,17 @@
     </div>
   </section>
 
-  <section id="about">
+
+
+
+
+  <section id="thumnail-links">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-12 mx-auto deck">
 
-          <div class="card">
-            <img class="card-img-top" src="assets/img/association/staff.png" alt="staff" />
+          <div class="card col-lg-3">
+            <img class="card-img-top img-fluid" src="assets/img/association/staff.png" alt="staff" />
             <div class="card-body">
               <p class="card-text">
                 Staff
@@ -126,8 +132,8 @@
             </div>
           </div>
 
-          <div class="card">
-            <img class="card-img-top" src="assets/img/association/locations.png" alt="locations" />
+          <div class="card col-lg-3">
+            <img class="card-img-top img-fluid" src="assets/img/association/locations.png" alt="locations" />
             <div class="card-body">
               <p class="card-text">
                 Locations
@@ -135,8 +141,8 @@
             </div>
           </div>
 
-          <div class="card">
-            <img class="card-img-top" src="assets/img/association/partners.png" alt="partners" />
+          <div class="card col-lg-3">
+            <img class="card-img-top img-fluid" src="assets/img/association/partners.png" alt="partners" />
             <div class="card-body">
               <p class="card-text">
                 Partners
@@ -151,69 +157,80 @@
 
 
 
+  <div class="footer-mask">
+    <svg viewBox="0 0 800 150">
+      <path d="M 0 0 C 400 250 425 50 800 50 L 800 350 L 0 150 L 0 0" fill="#02675A" id="bottom-path"></path>
+
+    </svg>
+  </div>
+
+
+
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
+  <footer class="py-5 px-5 col-lg-12">
+    <div class="align-items-center">
 
-
-      <img src="assets/img/logo.svg" alt="logo" />
+    <div class="row align-items-center justify-content-around">
+      <img src="assets/img/logo.svg" alt="logo" class="footer-logo" />
 
 
 
       <!--Footer navigation-->
-      <div id="footer-nav">
+      <div class="footer-nav">
         <h3>Navigation</h3>
         <hr />
-        <ul>
-          <li class="nav-item">
-            <a href="#about">Associazione</a>
-          </li>
-          <li class="nav-item">
-            <a href="#services">Servizi</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact">Eventi</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact">Unisciti a noi</a>
-          </li>
-          <li class="nav-item">
-            <!--TODO: pensare al bottone colorato-->
-            <a href="#contact">Supportaci</a>
+       
+          <div class="row justify-content-between pr-5">
+            <ul>
+            <li>
+              <a href="#about">Home</a>
+            </li>
+            <li >
+              <a href="#about">Associazione</a>
+            </li>
+            <li >
+              <a href="#services">Servizi</a>
+            </ul>
+            <ul>
+            </li>
+            <li>
+              <a href="#contact">Eventi</a>
+            </li>
+            <li>
+              <a href="#contact">Unisciti a noi</a>
+            </li>
+            <li>
+              <a href="#contact">Supportaci</a>
 
-          </li>
-
-        </ul>
+            </li>
+            </ul>
+          </div>
+ 
       </div>
 
       <!-- Social icons-->
-      <ul>
-        <li class="nav-item">
-          <img class="social-icon" src="assets/img/social/facebook.svg" alt="facebook">
-        </li>
-        <li class="nav-item">
-          <img class="social-icon" src="assets/img/social/instagram.svg" alt="instagram">
-        </li>
-        <li class="nav-item">
-          <img class="social-icon" src="assets/img/social/twitter.svg" alt="twitter">
-        </li>
-        <li class="nav-item">Per continuare, Google con
+      <ul >
+        <li class="social-li">
           <img class="social-icon" src="assets/img/social/telegram.svg" alt="telegram">
         </li>
-        <li class="nav-item">
-          <!--TODO: pensare al bottone colorato-->
-          <a href="#contact">Supportaci</a>
-
+        <li class="social-li">
+          <img class="social-icon" src="assets/img/social/facebook.svg" alt="facebook">
         </li>
+        <li class="social-li">
+          <img class="social-icon" src="assets/img/social/instagram.svg" alt="instagram">
+        </li>
+        <li class="social-li">
+          <img class="social-icon" src="assets/img/social/twitter.svg" alt="twitter">
+        </li>
+       
+
 
       </ul>
-
-
-      <nav>
-
-      </nav>
+      
     </div>
-    <!-- /.container -->
+
+    </div>
+
   </footer>
 
   <!-- Bootstrap core JavaScript -->
