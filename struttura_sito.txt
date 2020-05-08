@@ -11,7 +11,7 @@ legenda:
 pagina in cui c'è un modulo per la donazione e due righe in cui si racconta cosa ci facciamo (tipo progetti in cui saranno spesi quei soldi e puoi decidere di selezionarne uno in particolare)
 
 
-+Unisciti a noi (get involved)
++Unisciti a noi (get involved) // secondo me si può fare una pagina unica ?
 -come (how to)
 pagina iniziale di introduzione in cui si spiega come fare a unirsi nelle varie modalità, ogni modalità ha il suo link, le modalità sono 3 , si può unirsi come individuo privato (come individuo) come azienda/scuola/famiglia (come gruppo) oppure si può applicare per il lavoro (lavora con noi )
 
