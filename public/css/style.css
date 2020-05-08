@@ -7,6 +7,8 @@ header{
     padding-top: 156px;
     color: #f8f8f8;
     background-image: url('../assets/img/banner-forrest.png');
+    width: 100%;
+    background-color: red !important;
 }
 .mask{
     left:0;
@@ -52,12 +54,18 @@ nav{
     box-shadow: 2px 2px 4px 3px rgba(56, 56, 56,0.8);
 
 }
-
 .banner-title h1{
     padding: 0.7em 0 0.7em 0;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 800;
 }
+@media screen and (max-width: 400px) 
+{
+    .banner-title h1{
+        font-size: 2em;
+    }    
+}
+
 .breadcrumbs{
     margin-top: 1em;
     text-align:right;
@@ -103,11 +111,14 @@ footer{
 }
 .footer-logo{
     display: inline-block;
-    padding-right: 1em;
+    min-width: 50px;
+    width: auto;
+    padding: 0 1.5em 2em 0 ;
 }
 .footer-nav{
     display: inline-block;
     color: #f8f8f8;
+    padding: 1.5em 1.5em 1.5em 1.5em;
 }
 .footer-nav h3{
     font-weight: bold;
@@ -133,17 +144,20 @@ footer{
     text-decoration: none;
 }
 
+.social-ul{
+    text-align: center;
+}
 .social-li{
     display: inline-block;
 }
 .social-icon{
+    padding-top: 1.5em;
     min-width: 40px;
     width: 80%;
     display: inline-block;
 }
 
 /*
-
 // stile per visualizzare la griglia bootstrap 
 div[class="row"] {
     outline: 1px dotted rgba(11, 137, 255, 0.25) !important;
