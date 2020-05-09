@@ -20,10 +20,9 @@ header{
 }
 
 
-.bytype-filter{
+.filter-btn{
     display: inline-block;
     margin-top: 0.5em;
-    margin-bottom;
     padding: 0.5em ;
     border-radius: 1em;
     text-align: center; 
@@ -31,22 +30,21 @@ header{
     font-weight: bold;
     font-size: 1.2em;
 }
-.bytype-filter:hover{
+.filter-btn:hover{
     background-color: rgb(118, 177, 22);
 }
-.bytype-filter:active{
+.filter-btn:active{
     background-color: rgb(118, 177, 22);
 }
 
-
-.bytype-filter img{
+.filter-btn img{
     display: inline-block;
     width: 20%;
     min-width: 30px;
     line-height: normal;
     margin-right: 0.5em;
 }
-.bytype-filter p{
+.filter-btn p{
     display: inline-block;
     line-height: normal;
     font-weight: bold;
@@ -60,3 +58,7 @@ header{
     font-style: oblique;
 }
 
+.onlytext-btn{
+    padding-left: 1em;
+    padding-right: 1em;
+}
