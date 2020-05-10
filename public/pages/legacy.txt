@@ -1,107 +1,28 @@
-<!-- Filter bar -->
+<section id="event">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 ">
 
-<div class="container">
-
-    <div class="filter-bar col-lg- mx-auto">
-      <div class="row py-0 align-items-center">
-
-          <ul  class="nav navbar bytype-filter">
-            <li>
-              <p class="font-italic ">Tipo: </p>
-            </li>
-            <li>
-              <button class="filter-btn">Tutti </button>
-            </li>
-            <li class="">
-              <img src="../assets/img/events/education.svg" alt="Educazione"/>
-              <p>Educazione</p>
-            </li>
-
-            <li class=" ">
-              <img src="../assets/img/events/volontariato.svg" alt="Volontariato"/>
-              <p>Volontariato</p>
-            </li>
-
-            <li class="">
-              <img src="../assets/img/events/explore.svg" alt="Visite"/>
-              <p>Visite</p>
-            </li>
-          </ul>
-          
-        </div>
-        <div class="row align-items-center">
-
-          <ul  class="bymonth-filter">
-            <li>
-              <p class="font-italic">Mese: </p>
-            </li>
-            <li class="">
-              
-              <p>Educazione</p>
-            </li>
-
-            <li class=" ">
-             
-              <p>Volontariato</p>
-            </li>
-
-            <li class="">
-              
-              <p>Visite</p>
-            </li>
-          </ul>
-          
+          <img src="../assets/img/events/quercianana.png" class="event-img">
         </div>
 
 
 
+        <div class="col-lg-1">
+        
+          <img src="../assets/img/events/volontariato.svg" class="event-type-icon" />
+        </div>
+        <div class="col-lg-5 ">
+          <div class="event-info">
+            <h3 class="event-title">Salviamo la Quercia Nana</h2>
+              <h4 class="event-time"> 28 Giugno 2020, 10.00-12.00 </h4>
+
+              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere più ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
+              </p>
+              <a href="/eventoxxx" class="more"> Continua</a>
+          </div>
+
+        </div>
       </div>
-
-  </div>
-
-
-
-
-
-  ////////////////////////////////
-
-
-.filter-bar ul{
-    padding:1em;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.filter-bar li{
-    display: inline-block;
-    padding:1em;
-}
-.filter-bar li:hover{
-    fill: red;
-}
-.bytype-filter img{
-    display: inline-block;
-    min-width: 20px;
-    width: 3em;
-    margin-right: 1em;
-    fill:red;
-}
-.bytype-filter p{
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-.filter-btn{
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.2em;
-    padding:0.2em 0.5em 0.2em 0.5em;
-    border-radius: 0.4em;
-    border: none;
-    color: #f8f8f8;
-    background-color: rgb(125, 130, 136);
-}
-.filter-btn:hover{
-    background-color: aqua;
-}
+    </div>
+  </section>

@@ -101,129 +101,211 @@
 
 
 
-
+  <!-- Filter bar -->
   <div class="container filter-bar ">
     <div class="row align-items-center justify-content-around bytype-row mt-5">
-      <div class="filter-btn onlytext-btn">
+      <button class="filter-btn onlytext-btn active type-btn" onclick="filterTypes('ALL')" id="all-types-btn">
         <p>TUTTI</p>
-      </div>
-      <div class="filter-btn">
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('EDU')">
         <img src="../assets/img/events/education.svg" />
         <p>Educazione</p>
-      </div>
-      <div class="filter-btn">
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('VOL')">
         <img src="../assets/img/events/volontariato.svg" />
         <p>Volontariato</p>
-      </div>
-      <div class="filter-btn">
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('VISITS')">
         <img src="../assets/img/events/explore.svg" />
         <p>Visite</p>
-      </div>
+      </button>
 
     </div>
 
-    <div class="row align-items-center justify-content-around bymonth-row">
-      <div class="filter-btn onlytext-btn">
+
+    <div class="row align-items-center justify-content-around bymonth-row" id="btn-row2">
+      <button class="filter-btn onlytext-btn active month-btn" onclick="filterMonths('ALL')" id="all-months-btn">
         <p>TUTTI</p>
-      </div> 
-      
-      <div class="filter-btn onlytext-btn">
+      </button>
+
+      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('GIU')">
         <p>GIU</p>
-      </div>
+      </button>
 
-            
-      <div class="filter-btn onlytext-btn">
+
+      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('LUG')">
         <p>LUG</p>
-      </div>
+      </button>
 
-      <div class="filter-btn onlytext-btn">
+      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('AGO')">
         <p>AGO</p>
-      </div>
-          
-      <div class="filter-btn onlytext-btn ">
+      </button>
+
+      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('SET')">
         <p>SET</p>
-      </div>
-            
-      <div class="filter-btn onlytext-btn">
+      </button>
+
+      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('OTT')">
         <p>OTT</p>
-      </div>
-            
-      <div class="filter-btn onlytext-btn">
+      </button>
+
+      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('NOV')">
         <p>NOV</p>
-      </div>
-            
-      <div class="filter-btn onlytext-btn">
+      </button>
+
+      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('DEC')">
         <p>DIC</p>
-      </div>
-            
-     
-      
+      </button>
+
     </div>
+  </div>
+  <!-- //END Filterbar -->
+
+
+
+  <!-- ZERO EVENTS CASE-->
+  <section id="zero-events" class="unshown">
+    <div class="container">
+      <h1> Nessun evento disponibile per la selezione di filtri impostata, prova ad essere più flessibile!</h1>
+    </div>
+  </section>
+  <!-- START EVENTS  -->
+  <div id="all-events">
+
+    <section class="event AGO EDU">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/planting.png" class="event-img">
+          </div>
+
+          <div class="col-lg-1">
+            <img src="../assets/img/events/education.svg" class="event-type-icon" />
+          </div>
+
+          <div class="col-lg-5 ">
+            <div class="event-info">
+
+              <h3 class="event-title">Piantare i pini</h3>
+              <h4 class="event-time"> 28 Agosto 2020, 10.00-12.00 </h4>
+
+              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere
+                più
+                ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
+              </p>
+              <a href="/eventoxxx" class="more"> Continua</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event DEC EDU">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/quercianana.png" class="event-img">
+          </div>
+
+          <div class="col-lg-1">
+            <img src="../assets/img/events/education.svg" class="event-type-icon" />
+          </div>
+
+          <div class="col-lg-5 ">
+            <div class="event-info">
+
+              <h3 class="event-title">Imparare le piante</h3>
+              <h4 class="event-time"> 28 Dicembre 2020, 10.00-12.00 </h4>
+
+              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere
+                più
+                ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
+              </p>
+              <a href="/eventoxxx" class="more"> Continua</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event SET VISITS">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/planting.png" class="event-img">
+          </div>
+
+          <div class="col-lg-1">
+            <img src="../assets/img/events/explore.svg" class="event-type-icon" />
+          </div>
+
+          <div class="col-lg-5 ">
+            <div class="event-info">
+
+              <h3 class="event-title">Visita al boschetto</h3>
+              <h4 class="event-time"> 28 Settembre 2020, 10.00-12.00 </h4>
+
+              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere
+                più
+                ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
+              </p>
+              <a href="/eventoxxx" class="more"> Continua</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event GIU VOL">
+      <div class="container" class="june explore">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/verdeurbano.png" class="event-img">
+          </div>
+
+          <div class="col-lg-1">
+            <img src="../assets/img/events/volontariato.svg" class="event-type-icon" />
+          </div>
+
+          <div class="col-lg-5 ">
+            <div class="event-info">
+
+              <h3 class="event-title">Salviamo la Quercia Nana</h3>
+              <h4 class="event-time"> 28 Giugno 2020, 10.00-12.00 </h4>
+
+              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere
+                più
+                ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
+              </p>
+              <a href="/eventoxxx" class="more"> Continua</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
   </div>
 
 
 
 
 
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="description-title">Dediti a proteggere le foreste urbane di Milano piantando, conservando ed
-            educando.</h2>
 
-
-          <p class="lead description-text text-justify">Fondata nel 1996, MilanoGreen lavora instancabilmente per
-            affrontare la
-            perdita di alberi di Milano, proteggere le sue foreste e creare nuovi spazi verdi. Potenziata dalla sua
-            meravigliosa comunità di volontari, MilanoGreen serve l'area metropolitana di Milano ed è cresciuta fino a
-            diventare una delle organizzazioni no profit più conosciute e supportate dell’hinterland.</p>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- Thumbnails to link to other pages -->
-  <section id="thumnail-links">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto deck">
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff.png" alt="staff" />
-            <div class="card-body">
-              <p class="card-text">
-                Staff
-              </p>
-            </div>
-          </div>
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/locations.png" alt="locations" />
-            <div class="card-body">
-              <p class="card-text">
-                Locations
-              </p>
-            </div>
-          </div>
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/partners.png" alt="partners" />
-            <div class="card-body">
-              <p class="card-text">
-                Partners
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <!-- Footer wave svg element -->
@@ -315,6 +397,7 @@
   <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>
   <script src="../js/fading-nav.js"></script>
+  <script src="../js/events-filter.js"></script>
 
 
 </body>
