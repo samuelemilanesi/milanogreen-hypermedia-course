@@ -25,13 +25,15 @@ header{
  
 }
 
-.btn-success {
-  color: #4fbfa8;
-  background-color: #ffffff;
-  border-color: #4fbfa8;
-  font-weight: bold;
-  letter-spacing: 0.05em;
+input[type="submit"].my-submit {
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 50px!important;
 }
+
+
 
 .footer-mask{
     bottom:0;
