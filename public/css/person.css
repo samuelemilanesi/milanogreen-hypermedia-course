@@ -1,0 +1,57 @@
+header{
+    background-image: url('../assets/img/banner-forrest.png');
+}
+
+.deck{
+    text-align: center;
+}
+.card{
+    border: none;
+    display: inline-block;
+    vertical-align : top;
+
+}
+.card img{
+    border-radius: 3em;
+    display:  inline-block; 
+}
+.card-text{
+    font-size: 1.3em;
+    color: black;
+    text-align: center;
+    display:  inline-block}
+
+.Name{
+    font-size: 3em;
+    color: black;
+    text-align: left;
+    display:  inline-block}
+    
+}
+.contact-img{
+    width: 5%;
+    height: 5%;
+    display:  inline-block; 
+}
+.font-7{
+    font-size: 2em;
+    color: black;
+    text-align: left;
+    display:  inline-block
+}
+.font-6{
+    font-size: 1.5em;
+    color: black;
+    text-align: left;
+    display:  inline-block
+}
+.font-5{
+    font-size: 1.2em;
+    color: black;
+    text-align: left;
+    display:  inline-block
+}
+.footer-mask{
+    bottom:0;
+    left:0;
+}
