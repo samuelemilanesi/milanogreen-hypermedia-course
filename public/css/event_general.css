@@ -1,0 +1,74 @@
+header{
+    background-image: url('../assets/img/banner-forrest.png');
+}
+.type-icon{
+    display: inline-block;
+    background-color: #02675A;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    width: 2em;
+}
+.description-title{
+}
+.description-title h2{
+    display: inline-block;
+    text-align: center;
+    margin:0;
+    padding: 0 0.5em 0 0;
+    font-weight: 700;
+}
+.desc-img{
+    width: 100%;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+.info-el{
+    margin:0;
+    
+}
+#single-event h4 {
+    font-weight: 700;
+    color:black;
+
+}
+#single-event ul{
+    list-style-type: none;
+    text-align: left;
+    color: green;
+    margin: 0;
+    padding: 0;
+}
+#single-event a{
+   
+    color: #688D90;
+    
+}
+
+.description-text{
+    margin-top: 2em;
+}
+
+.email{
+    font-family: monospace;
+}
+
+
+#related-services h2{
+    color: black;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+.card{
+    border: none;
+    display: inline-block;
+}
+.card img{
+    border-radius: 3em;
+}
+.card-text{
+    font-size: 1.3em;
+    color: black;
+    text-align: center;
+}
