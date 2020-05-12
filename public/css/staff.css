@@ -12,7 +12,7 @@ header{
 
 }
 .card img{
-    border-radius: 3em;
+    border-radius: 40%;
     display:  inline-block; 
 }
 .card-text{
