@@ -4,28 +4,24 @@ header{
 
 
 .filter-bar{
-    background-color: rgb(102, 137, 138);
+    background-color: none;
     color: #f8f8f8;
-    border-radius: 1em;
+    border-radius: 3em;
 }
 
 .bytype-row{
     background-color: #5F9EA0;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    padding:1em;
+    border-radius : 3em;
 }
 
 .filter-btn{
     display: inline-block;
-    margin-top: 0.5em;
-    padding: 0.5em ;
     border-radius: 1em;
     border: none;
     text-align: center; 
     line-height: 3em;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     background: transparent;
     color: #f8f8f8;
 }
@@ -50,6 +46,7 @@ header{
     font-size: 1.2em;
 }
 
+
 .filter-label{
     padding-top: 0.75rem;
     font-size:1.4em;
@@ -68,6 +65,33 @@ header{
     text-decoration: underline;
     text-align: right;
     color: #688D90;
+}
+.event-img{
+    width:100%;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+
+
+.event-title{
+    color: black;
+    font-weight: 800;
+    font-size:1.2em;
+    text-align: center
+    
+}
+.event-time{
+    color: black;
+    font-weight: 400;
+    font-size: 1.2em;
+   text-align: center;
+}
+
+.footer-mask{
+    bottom:0;
+    left:0;
 }
 
 /* Filtering */
@@ -112,21 +136,17 @@ header{
 .card-text{
     font-size: 1.3em;
     color: black;
-    text-align :right;
+    text-align : center;
  
 }
 
 input[type="submit"].my-submit {
-    border-radius: 10px;
-    border: none;
-    box-shadow: none;
-    font-family: inherit;
-    font-size: 50px!important;
-}
+background: #28a745;
+color: none;
+border-color: g;
+height: 50px;
+width: px;
+font: 15px;
+text-shadow:none;
+border-radius: 50px;
 
-
-
-.footer-mask{
-    bottom:0;
-    left:0;
-}

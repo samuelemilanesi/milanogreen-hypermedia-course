@@ -21,7 +21,7 @@
   <link href="../css/style.css" rel="stylesheet">
 
   <!-- Page specific style -->
-  <link href="../css/services.css" rel="stylesheet">
+  <link href="../css/service_general.css" rel="stylesheet">
     
     
 </head>
@@ -44,7 +44,7 @@
               <a class="nav-link js-scroll-trigger" href="./association.html">Associazione</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Servizi</a>
+              <a class="nav-link js-scroll-trigger" href="./services.html">Servizi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="./events.html">Eventi</a>
@@ -106,24 +106,22 @@
   <section id="about">
     <div class="container">
       <div class="row">
+          
         <div class="col-lg-8 mx-auto">
           <h2 class="description-title">Ripristino delle foreste</h2>
                 </div>
         </div>
           
       </div>
- <div class="container filter-bar ">
-    <div class="row align-items-center justify-content-around bytype-row mt-5">
-      <button class="filter-btn type-btn" onclick="filterTypes('EDU')">
-        <img src="../assets/img/events/education.svg" />
+ <div class="container filter-bar mt ">
+    <div class="row align-items-center justify-content-around bytype-row mt-">
+      <button class="filter-btn type-btn" onclick="filterTypes('SER')">
         <p>Panoramica servizio</p>
       </button>
-      <button class="filter-btn type-btn" onclick="filterTypes('VOL')">
-        <img src="../assets/img/events/volontariato.svg" />
+      <button class="filter-btn type-btn" onclick="filterTypes('TEAM')">
         <p>Team</p>
       </button>
-      <button class="filter-btn type-btn" onclick="filterTypes('VISITS')">
-        <img src="../assets/img/events/explore.svg" />
+      <button class="filter-btn type-btn" onclick="filterTypes('EVE')">
         <p>Eventi correlati</p>
       </button>
 
@@ -131,12 +129,11 @@
     </div>
       </div>
   </section>
- <div id="">
-
-
 
   <!-- Thumbnails to link to other pages -->
+<div id="all-events">
 
+    <section class="event SER">
   <section id="thumnail-links">
     <div class="container">
       <div class="row">
@@ -154,12 +151,90 @@
                   <form action="mailto:alessandro.lazzaretti1@gmail.com" method="GET">
                  <input class="my-submit" type="submit" value="Contatta il nostro referente" />
                    </form>
-                      <!-- <button class="my-button" onclick="bottone_mail()">
-                    Testo del bottone
-                    </button> */ non funziona manco col bottone la css personalizzazione  -->             </div>     
+              </div>     
+            </div>
+          </div>
+        </div>
+   </section>
+    <section class="event TEAM">
+        <div class="card col lg-6">
+            <h2 class="description-title" >
+                 Team - Ripristino delle forseste </h2>
+            </div>
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto deck">
+
+          <div class="card col-lg-3">
+            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Filippo.png" alt="Filippo" >
+            <div class="card-body">
+              <p class="card-text">
+               <b> Filippo Pettine </b> 
+              </p>
+                
+            </div>
+          </div>
+
+          <div class="card col-lg-3">
+            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Cecilia.png" alt="Cecilia" />
+            <div class="card-body">
+              <p class="card-text">
+                <b> Cecilia Li </b>
+                </p>
+            
+            </div>
+          </div>
+
+          <div class="card col-lg-3">
+            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/tony.png" alt="Tony" />
+            <div class="card-body">
+              <p class="card-text">
+               <b> Tony Baviera </b>
+              </p>
+            </div>
+          </div>
+         </div>
         </div>
       </div>
+   </section>
+  <section class="event EVE">
+   <div class="container">      
+       <div class="card col lg-6">
+            <h2 class="description-title" >
+                 Eventi - Ripristino delle foreste </h2>
+            </div>
+     <div class="row justify-content-center">
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/quercianana.png" class="event-img">
+         
+              <h1 class="event-title">Imparare le piante</h1>
+              <h2 class="event-time"> 28 Dicembre 2020, 10.00-12.00 </h2>
+          </div>
+         
+         <div class="col-lg-4 ">
+            <img src="../assets/img/events/planting.png" class="event-img">
+             
+              <h1 class="event-title">Visita al boschetto</h1>
+              <h2 class="event-time"> 28 Settembre 2020, 10.00-12.00 </h2>
+           </div>
+
+
+
+             
+
+      
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/verdeurbano.png" class="event-img"> 
+
+              <h1 class="event-title">Salviamo la Quercia Nana</h1>
+              <h2 class="event-time"> 28 Giugno 2020, 10.00-12.00 </h2>
+          </div>
+
+          </div>
         </div>
+    </section>
+
 
   </section>
 
@@ -252,7 +327,7 @@
   <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>
   <script src="../js/fading-nav.js"></script>
-
+<script src="../js/related.js"></script>
 
 </body>
 
