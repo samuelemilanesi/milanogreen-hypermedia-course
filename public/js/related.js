@@ -4,18 +4,6 @@ selectedTypes = ["SER", "EVE", "TEAM"];
 events = document.getElementsByClassName('event')
 
 
-var curType = "ALL";
-
-
-
-
-
-
-
-
-
-
-
 filterTypes = function (type) {
     curType = type;
     allTypesBtns = document.getElementsByClassName("type-btn");
@@ -26,7 +14,7 @@ filterTypes = function (type) {
     if (!($(event.currentTarget).hasClass("active"))) {
         $(event.currentTarget).addClass("active");
         for (let ev of events) {
-            if (($(ev).hasClass(type) || curType == "ALL")) {
+            if (($(ev).hasClass(type))) {
                 $(ev).show(700);
                 $(ev).removeClass("hidden");
 
@@ -49,10 +37,8 @@ countHidden = function(){
     for(let ev of events){
         if(ev.className.split(" ").includes("hidden")){
             cnt++;
-            console.log(ev)
         }
     }
-    console.log('elementi invisibili: ', cnt);
     return cnt;
     
 }

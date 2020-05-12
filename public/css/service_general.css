@@ -7,8 +7,14 @@ header{
     background-color: none;
     color: #f8f8f8;
     border-radius: 3em;
+    padding:0;
 }
 
+.filter-bar p{
+    padding:0 0.5em;
+    margin:0;
+
+}
 .bytype-row{
     background-color: #5F9EA0;
     border-radius : 3em;
@@ -113,9 +119,12 @@ header{
 #zero-events{
     margin: 3em 0 8em 0;
     text-align: center;
+    font-weight: 800;
 }
 
-
+.hidden{
+    display:none;
+}
 
 .deck{
     text-align: center;
@@ -141,12 +150,15 @@ header{
 }
 
 input[type="submit"].my-submit {
-background: #28a745;
-color: none;
-border-color: g;
-height: 50px;
-width: px;
-font: 15px;
-text-shadow:none;
-border-radius: 50px;
+background: #02675A;
+color: #f8f8f8;
+border: none;
+font-weight: 700;
+padding: 1em 1em;
+font-size: 1.2em;
+border-radius: 2em;
+}
+input[type="submit"].my-submit:hover{
+    background-color: #5F9EA0;
+}
 
