@@ -25,3 +25,10 @@ header{
     bottom:0;
     left:0;
 }
+
+.quartier_gen img{
+    border-radius: 3em;
+    display:  inline-block; 
+    margin-bottom: 2em;
+
+}
