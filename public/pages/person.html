@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Services - MilanoGreen</title>
+  <title>Person - MilanoGreen</title>
 
   <!-- Import fonts -->
   <link
@@ -21,7 +21,7 @@
   <link href="../css/style.css" rel="stylesheet">
 
   <!-- Page specific style -->
-  <link href="../css/staff.css" rel="stylesheet">
+  <link href="../css/person.css" rel="stylesheet">
     
     
 </head>
@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="./index.hmtl">
           <img src="../assets/img/logo.svg" alt="Logo MilanoTree" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Associazione</a>
+              <a class="nav-link js-scroll-trigger" href="./association.html">Associazione</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="./services.html">Servizi</a>
@@ -100,108 +100,170 @@
 
   <!-- Description -->
   <div class="col-lg-8 mx-auto breadcrumbs">
-    <p>Associazione/Staff /</p>
+    <p>Associazione / Staff / Tony Baviera</p>
   </div>
 
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="description-title">Inontra il nostro team! </h2>
+
+    
+
+ <div class="container filter-bar mt ">
+    <div class="row align-items-center justify-content-around bytype-row mt-">
+      <button class="filter-btn type-btn" onclick="filterTypes('TEAM')">
+        <p>Profilo</p>
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('EVE')">
+        <p>Eventi organizzati</p>
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('SER')">
+        <p>Servizi gestiti</p>
+      </button>
 
 
-          <p class="lead description-text text-justify">MilanoGreen non avrebbe potuto compiere la sua missione senza il coinvolgimento di una legione di persone devote. Oltre a un'incredibile squadra di volontari, MilanoGreen è supportato da uno staff e un consiglio che lavora instancabilmente per mantenere viva questa visione.</p>
-
-        </div>
-      </div>
     </div>
-  </section>
-
-
+      </div>
 
 
   <!-- Thumbnails to link to other pages -->
+<div id="all-events">
 
-  <section id="thumnail-links">
-    <div class="container">
+    
+<section class="event TEAM">
+  <div class="container">
+      <div class="row">      
+        <div class="col-lg-6 mx-auqto deck">
+          <div class="card col-lg-10">
+            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/tony.png" alt="Tony">
+          </div>
+        </div>
+    <div class="card col-lg-6">
+         <div class="row ">
+           <div class="col">
+            <h4 class="info-el-name">Tony Baviera</h4>
+           </div>
+         </div>
+         <div class="row ">
+          <div class="col-6">
+            <h4 class="info-el-role">Co-Executive Director</h4>
+          </div>
+         </div>
+         <div class="row  ">
+          <div class="col-12">
+           <h4 class="info-el-motto">Un albero oggi per un domani migliore</h4>
+          </div>
+         </div>
+        <div class="row align-items-center ">
+         <div class="col-6">
+           <h4 class="info-el-contatti">Contatti</h4>
+         </div>
+        </div>
+      <div class="row align-items-center ">
+        <div class="col-8">
+         <img class="contact-img-mail img-fluid" src="../assets/img/association/staff_team/Vector.png"  >   
+            <h4 class="info-el-mail">
+              <a href="mailto://tb@mg.com" class="nav-link">
+                tony.baviera@milanogreen.it
+             </a>
+            </h4>
+         </div>
+      </div>
+    <div class="row align-items-center ">
+     <div class="col-7">
+      <img class="contact-img-phone img-fluid" src="../assets/img/association/staff_team/Vector%20(1).png"  >
+        <h4 class="info-el-mail">
+          <a href="tel:+39 347235452" class="nav-link">+39 3472352452  </a> </h4>
+     </div> 
+    </div>
+  </div>
+ </div>
+    </div>
+</section>
+    
+    <section class="event SER hidden">
+        <div class="card col lg-6">
+            <h2 class="description-title" >
+                 Tony Baviera </h2>
+            </div>
+     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto deck">
 
           <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Sara.png" alt="Sara" >
+            <img class="card-img-top img-fluid" src="../assets/img/services/Ripristino.png"  >
             <div class="card-body">
               <p class="card-text">
-               <b> Sara Salzani </b><br/>
-                Co-Executive Director
+               <b> Ripristino dei boschi</b> 
               </p>
                 
             </div>
           </div>
 
           <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Filippo.png" alt="Filippo" />
+            <img class="card-img-top img-fluid" src="../assets/img/services/tree_planting.png"  />
             <div class="card-body">
               <p class="card-text">
-                <b> Filippo Pettine </b><br/>
-                Co-Executive Director
-              </p>
+                <b> Tree planting </b>
+                </p>
             
             </div>
           </div>
 
           <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Giulia.png" alt="Giulia" />
+            <img class="card-img-top img-fluid" src="../assets/img/services/Mantenimento.png" />
             <div class="card-body">
               <p class="card-text">
-               <b> Giulia Capelli </b><br/>
-                Director of Development
-              </p>
+               <b> Mantenimento verde urbano</b>
               </p>
             </div>
           </div>
          </div>
         </div>
-
-    <div class="row">
-     <div class="col-lg-12 mx-auto deck">
-   
-    <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Ignazio.png" alt="Ignazio" />
-            <div class="card-body">
-              <p class="card-text">
-             <b> Ignazio Bove </b><br/>
-                Urban foresty Director
-              </p>
-              
+      </div>
+   </section>
+    
+  <section class="event EVE hidden">
+   <div class="container">      
+       <div class="card col lg-6">
+            <h2 class="description-title" >
+                 Eventi - Ripristino delle foreste </h2>
             </div>
+     <div class="row justify-content-center">
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/quercianana.png" class="event-img">
+         
+              <h1 class="event-title">Imparare le piante</h1>
+              <h2 class="event-time"> 28 Dicembre 2020, 10.00-12.00 </h2>
+          </div>
+         
+         <div class="col-lg-4 ">
+            <img src="../assets/img/events/planting.png" class="event-img">
+             
+              <h1 class="event-title">Visita al boschetto</h1>
+              <h2 class="event-time"> 28 Settembre 2020, 10.00-12.00 </h2>
+           </div>
+
+
+
+             
+
+      
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/verdeurbano.png" class="event-img"> 
+
+              <h1 class="event-title">Salviamo la Quercia Nana</h1>
+              <h2 class="event-time"> 28 Giugno 2020, 10.00-12.00 </h2>
           </div>
 
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Cecilia.png" alt="Cecilia" />
-            <div class="card-body">
-              <p class="card-text">
-                 <b> Cecilia Li </b><br/>
-                Director of Education
-              </p>
-            </div>
           </div>
-
-          <div class="card col-lg-3">
-              <a href="./person.html">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/tony.png" alt="Tony" />
-                  </a>
-            <div class="card-body">
-              <p class="card-text">
-                   <b> Tony Baviera</b><br/>
-                Planting Director
-              </p>
-            </div>
-          </div>
-         </div>
         </div>
+    </section>
+    
+  <section id="zero-events" class="hidden">
+      <div class="row align-items-center justify-content-center text-danger">
+        <h1> Nessun contenuto disponibile per questa sezione</h1>
+      </div>
+    </section>
 
- 
-  </section>
 
   <!-- Footer wave svg element -->
   <div class="footer-mask">
@@ -292,7 +354,7 @@
   <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>
   <script src="../js/fading-nav.js"></script>
-
+  <script src="../js/related.js"></script>
 
 </body>
 
