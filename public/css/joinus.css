@@ -80,19 +80,8 @@ header{
 }
 
 
-
-.event-title{
-    color: black;
-    font-weight: 800;
-    font-size:1.2em;
-    text-align: center
-    
-}
-.event-time{
-    color: black;
-    font-weight: 400;
-    font-size: 1.2em;
-   text-align: center;
+.description-text{
+    padding:0
 }
 
 .footer-mask{
@@ -100,26 +89,31 @@ header{
     left:0;
 }
 
-/* Filtering */
 
+.event img{
+    border-radius: 3em;
+    display:  inline-block; 
+    margin-bottom: 2em;
 
-.hidden{
-    display: none;
+}
+
+/* Button */
+
+input[type="submit"].my-submit {
+    background: #02675A;
+    color: #f8f8f8;
+    border: none;
+    font-weight: 700;
+    padding: 1em 1em;
+    font-size: 1.2em;
+    border-radius: 2em;
+    }
+    input[type="submit"].my-submit:hover{
+        background-color: #5F9EA0;
+    }
     
-}
-.active{
-    background-color:rgb(118, 177, 22) ;
-}
-.active:hover{
-    background-color:rgb(118, 177, 22) ;
-}
 
-#zero-events{
-    margin: 3em 0 8em 0;
-    text-align: center;
-    font-weight: 800;
-}
-
+/* Bootstrap cards styling*/
 .deck{
     text-align: center;
    
@@ -127,8 +121,6 @@ header{
 .card{
     border: none;
     display: inline-block;
-    vertical-align : top;
-
 
 }
 .card img{
@@ -143,16 +135,22 @@ header{
  
 }
 
-input[type="submit"].my-submit {
-background: #02675A;
-color: #f8f8f8;
-border: none;
-font-weight: 700;
-padding: 1em 1em;
-font-size: 1.2em;
-border-radius: 2em;
+
+/* Filtering */
+
+.hidden{
+    display:none;
 }
-input[type="submit"].my-submit:hover{
-    background-color: #5F9EA0;
+.active{
+    background-color:rgb(118, 177, 22) ;
+}
+.active:hover{
+    background-color:rgb(118, 177, 22) ;
+}
+
+#zero-events{
+    margin: 3em 0 8em 0;
+    text-align: center;
+    font-weight: 800;
 }
 
