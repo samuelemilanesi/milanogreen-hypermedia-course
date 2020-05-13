@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Association - MilanoGreen</title>
+  <title>Services - MilanoGreen</title>
 
   <!-- Import fonts -->
   <link
@@ -20,6 +20,10 @@
   <!-- Custom styles for this template -->
   <link href="../css/style.css" rel="stylesheet">
 
+  <!-- Page specific style -->
+  <link href="../css/joinus.css" rel="stylesheet">
+
+
 </head>
 
 <body id="page-top">
@@ -27,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="./index.hmtl">
           <img src="../assets/img/logo.svg" alt="Logo MilanoTree" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -37,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Associazione</a>
+              <a class="nav-link js-scroll-trigger" href="./association.html">Associazione</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="./services.html">Servizi</a>
@@ -47,6 +51,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="./joinus.html">Unisciti a noi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./Contacts.html">Contatti</a>
             </li>
             <li class="nav-item">
               <!--TODO: pensare al bottone colorato-->
@@ -62,13 +69,13 @@
 
     <!-- Section title banner -->
     <div class="container text-center banner-title">
-      <h1>Associazione</h1>
+      <h1>Unisciti a noi</h1>
     </div>
     <!--//END Section title banner -->
 
 
 
-  <!-- Header waves svg element  -->
+    <!-- Header waves svg element  -->
     <div class="mask">
       <svg viewBox="0 0 1433 150">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -91,163 +98,253 @@
 
 
 
-  <!-- Description -->
+  <!-- breadcrumbs -->
   <div class="col-lg-8 mx-auto breadcrumbs">
-    <p>Associazione /</p>
+    <p>Unisciti a noi /</p>
   </div>
 
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="description-title">Dediti a proteggere le foreste urbane di Milano piantando, conservando ed
-            educando.</h2>
+  <!-- Title -->
+  <!--
+  <div class="container">
+    <div class="row">
 
-
-          <p class="lead description-text text-justify">Fondata nel 1996, MilanoGreen lavora instancabilmente per affrontare la
-            perdita di alberi di Milano, proteggere le sue foreste e creare nuovi spazi verdi. Potenziata dalla sua
-            meravigliosa comunità di volontari, MilanoGreen serve l'area metropolitana di Milano ed è cresciuta fino a
-            diventare una delle organizzazioni no profit più conosciute e supportate dell’hinterland.</p>
-
-        </div>
+      <div class="col-lg-8 mx-auto">
+        <h2 class="description-title">Ripristino delle foreste</h2>
       </div>
     </div>
-  </section>
 
+  </div>
+-->
 
+  <!-- Filter bar -->
 
-
-  <!-- Thumbnails to link to other pages -->
-  <section id="thumnail-links">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto deck">
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff.png" alt="staff" />
-            <div class="card-body">
-              <p class="card-text">
-                Staff
-              </p>
-            </div>
-          </div>
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/locations.png" alt="locations" />
-            <div class="card-body">
-              <p class="card-text">
-                Locations
-              </p>
-            </div>
-          </div>
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/partners.png" alt="partners" />
-            <div class="card-body">
-              <p class="card-text">
-                Partners
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
+  <div class="container filter-bar">
+    <div class="row align-items-center justify-content-around bytype-row">
+      <button class="filter-btn type-btn active " onclick="filterTypes('SER')">
+        <p>Panoramica</p>
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('TEAM')">
+        <p>Come gruppo</p>
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('EVE')">
+        <p>Come individuo</p>
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('EVE')">
+        <p>Lavora con noi</p>
+      </button>
     </div>
-  </section>
-
-
-  <!-- Footer wave svg element -->
-  <div class="footer-mask">
-    <svg viewBox="0 0 800 150">
-      <path d="M 0 0 C 400 250 425 50 800 50 L 800 350 L 0 150 L 0 0" fill="#02675A" id="bottom-path"></path>
-
-    </svg>
   </div>
 
 
 
-  <!-- Footer -->
-  <footer class="py-5 px-5 col-lg-12">
-    <div class="align-items-center">
+    <!-- Sezione 1: SERVIZIO -->
+    <section class="event SER">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mx-auto ">
 
-    <div class="row align-items-center justify-content-around">
-
-      <!-- Footer logo-->
-      <img src="../assets/img/logo.svg" alt="logo" class="footer-logo" />
-
+            <img class="card-img-top img-fluid" src="../assets/img/association/staff.png" alt="Ripristino">
 
 
-      <!--Footer navigation-->
-      <div class="footer-nav">
-        <h3>Navigation</h3>
-        <hr />
-       
-          <div class="row justify-content-between pr-5">
-            <ul>
-            <li>
-              <a href="../index.html">Home</a>
-            </li>
-            <li >
-              <a href="#about">Associazione</a>
-            </li>
-            <li >
-              <a href="./services.html">Servizi</a>
-            </ul>
-            <ul>
-            </li>
-            <li>
-              <a href="./events.html">Eventi</a>
-            </li>
-            <li>
-              <a href="./joinus.html">Unisciti a noi</a>
-            </li>
-            <li>
-              <a href="./supportus">Supportaci</a>
-
-            </li>
-            </ul>
           </div>
- 
+          <div class="col-lg-6 mx-auto ">
+
+            <p class="lead description-text text-justify">
+              Se sei appassionato di alberi e del verde, abbiamo molte grandi opportunità che ti aspettano.
+              Offriamo una vasta gamma di eventi di volontariato ed educativi che sono divertenti e istruttivi,
+              comprese opportunità settimanali di volontariato come individuo o con un gruppo. Se sei interessato a
+              diventare un volontario specializzato, abbiamo un programma di certificazione disponibile per i nostri
+              sostenitori più appassionati. O meglio ancora, unisciti al nostro team! Il nostro personale dinamico è
+              dedito alla missione di MilanoGreen e accoglie con favore il tuo interesse a condividere la nostra
+              visione.
+
+              Unisciti a noi ora e aiuta a costruire e proteggere la nostra foresta urbana!
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SEZIONE 2: TEAM -->
+    <section class="event TEAM hidden">
+      <div class="card col lg-6">
+        <h2 class="description-title">
+          Team - Ripristino delle forseste </h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto deck">
+
+            <div class="card col-lg-3">
+              <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Filippo.png" alt="Filippo">
+              <div class="card-body">
+                <p class="card-text">
+                  <b> Filippo Pettine </b>
+                </p>
+
+              </div>
+            </div>
+
+            <div class="card col-lg-3">
+              <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Cecilia.png"
+                alt="Cecilia" />
+              <div class="card-body">
+                <p class="card-text">
+                  <b> Cecilia Li </b>
+                </p>
+
+              </div>
+            </div>
+
+            <div class="card col-lg-3">
+              <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/tony.png" alt="Tony" />
+              <div class="card-body">
+                <p class="card-text">
+                  <b> Tony Baviera </b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEZIONE 3: Eventi correlati -->
+
+    <section class="event EVE hidden">
+      <div class="container">
+        <div class="card col lg-6">
+          <h2 class="description-title">
+            Eventi - Ripristino delle foreste </h2>
+        </div>
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/quercianana.png" class="event-img">
+
+            <h1 class="event-title">Imparare le piante</h1>
+            <h2 class="event-time"> 28 Dicembre 2020, 10.00-12.00 </h2>
+          </div>
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/planting.png" class="event-img">
+
+            <h1 class="event-title">Visita al boschetto</h1>
+            <h2 class="event-time"> 28 Settembre 2020, 10.00-12.00 </h2>
+          </div>
+
+          <div class="col-lg-4 ">
+            <img src="../assets/img/events/verdeurbano.png" class="event-img">
+
+            <h1 class="event-title">Salviamo la Quercia Nana</h1>
+            <h2 class="event-time"> 28 Giugno 2020, 10.00-12.00 </h2>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="zero-events" class="hidden">
+      <div class="row align-items-center justify-content-center text-danger">
+        <h1> Nessun contenuto disponibile per questa sezione</h1>
       </div>
 
-      <!-- Social icons-->
-      <ul class="social-ul">
-        <li class="social-li">
-          <img class="social-icon" src="../assets/img/social/telegram.svg" alt="telegram">
-        </li>
-        <li class="social-li">
-          <img class="social-icon" src="../assets/img/social/facebook.svg" alt="facebook">
-        </li>
-        <li class="social-li">
-          <img class="social-icon" src="../assets/img/social/instagram.svg" alt="instagram">
-        </li>
-        <li class="social-li">
-          <img class="social-icon" src="../assets/img/social/twitter.svg" alt="twitter">
-        </li>
-       
+    </section>
 
+    <!-- Footer wave svg element -->
+    <div class="footer-mask">
+      <svg viewBox="0 0 800 150">
+        <path d="M 0 0 C 400 250 425 50 800 50 L 800 350 L 0 150 L 0 0" fill="#02675A" id="bottom-path"></path>
 
-      </ul>
-
+      </svg>
     </div>
 
-    </div>
 
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-5 px-5 col-lg-12">
+      <div class="align-items-center">
 
-  <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+        <div class="row align-items-center justify-content-around">
 
-  <!-- Custom JavaScript for this theme -->
-  <script src="../js/scrolling-nav.js"></script>
-  <script src="../js/fading-nav.js"></script>
+          <!-- Footer logo-->
+          <img src="../assets/img/logo.svg" alt="logo" class="footer-logo" />
 
+
+
+          <!--Footer navigation-->
+          <div class="footer-nav">
+            <h3>Navigation</h3>
+            <hr />
+
+            <div class="row justify-content-between pr-5">
+              <ul>
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#about">Associazione</a>
+                </li>
+                <li>
+                  <a href="./services.html">Servizi</a>
+              </ul>
+              <ul>
+                </li>
+                <li>
+                  <a href="./events.html">Eventi</a>
+                </li>
+                <li>
+                  <a href="./joinus.html">Unisciti a noi</a>
+                </li>
+                <li>
+                  <a href="./supportus">Supportaci</a>
+
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Social icons-->
+          <ul class="social-ul">
+            <li class="social-li">
+              <img class="social-icon" src="../assets/img/social/telegram.svg" alt="telegram">
+            </li>
+            <li class="social-li">
+              <img class="social-icon" src="../assets/img/social/facebook.svg" alt="facebook">
+            </li>
+            <li class="social-li">
+              <img class="social-icon" src="../assets/img/social/instagram.svg" alt="instagram">
+            </li>
+            <li class="social-li">
+              <img class="social-icon" src="../assets/img/social/twitter.svg" alt="twitter">
+            </li>
+
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="../js/scrolling-nav.js"></script>
+    <script src="../js/fading-nav.js"></script>
+    <script src="../js/related.js"></script>
 
 </body>
 
 </html>
-<!--prova per vedere se mi ricordo come si committa-->
