@@ -92,6 +92,10 @@ header{
     font-size: 1.2em;
    text-align: center;
 }
+.hidden{
+    display:none;
+}
+
 
 .deck{
     text-align: center;
