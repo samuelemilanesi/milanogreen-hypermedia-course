@@ -1,0 +1,445 @@
+---
+swagger: "2.0"
+info:
+  description: "API for the web site of the Volunteering Association MilanoGreen,\
+    \ containing the staff of the associations and the organized events"
+  version: "2.0.0"
+  title: "MilanoGreen BackEnd"
+  contact:
+    name: "CloudyOwls - Lazzaretti, Milanesi, Pasotti - HYP Course 2019/20"
+    email: "samuele.milanesi@mail.polimi.it"
+  license:
+    name: "MIT"
+    url: "http://opensource.org/licenses/MIT"
+host: "milanogreen.herokuapp.com"
+basePath: "/v1"
+tags:
+- name: "event"
+  description: "Event organized by MilanoGreen"
+- name: "people"
+  description: "Component of the Staff of MilanoGreen"
+- name: "service"
+  description: "Kind of service of those organized by MilanoGreen"
+schemes:
+  - https
+paths:
+  /events:
+    get:
+      tags:
+      - "event"
+      summary: "Events organized by MilanoGreen"
+      description: "All the Events organized by the association, will specify the\
+        \ date of the event (including the month), the specific Service to which they\
+        \ are associated and the Person who is in charge of the organization of the\
+        \ Event."
+      operationId: "eventsGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of displayable Events per page"
+        required: false
+        type: "integer"
+      - name: "offset"
+        in: "query"
+        description: "Pagination offset, default is 0"
+        required: false
+        type: "integer"
+      responses:
+        "200":
+          description: "Collection of events, succesfully loaded"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Event"
+        "400":
+          description: "Invalid ID"
+        "404":
+          description: "Event not found"
+      x-swagger-router-controller: "Event"
+  /event/{eventId}:
+    get:
+      tags:
+      - "event"
+      summary: "Find the event by its ID (identifier)"
+      description: "Returns an event, allows us to access a page of the specific event"
+      operationId: "eventEventIdGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "eventId"
+        in: "path"
+        description: "ID of event to be returned"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK, event found correctly"
+          schema:
+            $ref: "#/definitions/Event"
+        "400":
+          description: "Invalid ID"
+        "403":
+          description: "Forbidden access"
+        "404":
+          description: "Event not found"
+      x-swagger-router-controller: "Event"
+  /people:
+    get:
+      tags:
+      - "people"
+      summary: "Staff of MilanoGreen"
+      description: "All the people working in the Staff of MilanoGreen. This will\
+        \ specify their Name and Surname, role in the Association, their Motto and\
+        \ information contacts, consisting in both e-mail address and mobile phone\
+        \ number."
+      operationId: "peopleGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of displayable People per page"
+        required: false
+        type: "integer"
+      - name: "offset"
+        in: "query"
+        description: "Pagination offset, default is 0"
+        required: false
+        type: "integer"
+      responses:
+        "200":
+          description: "All the Staff, succesfully loaded"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/People"
+        "400":
+          description: "Invalid ID"
+        "404":
+          description: "Person not found"
+      x-swagger-router-controller: "People"
+  /person/{peopleId}:
+    get:
+      tags:
+      - "people"
+      summary: "Find the Person by her ID (identifier)"
+      description: "Returns a person, allows us to access a page of the specific profile"
+      operationId: "peoplePeopleIdGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "peopleId"
+        in: "path"
+        description: "ID of person to be returned"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK, person found correctly"
+          schema:
+            $ref: "#/definitions/People"
+        "403":
+          description: "Forbidden access"
+        "404":
+          description: "Person not found"
+      x-swagger-router-controller: "People"
+  /services:
+    get:
+      tags:
+      - "service"
+      summary: "Service of MilanoGreen association"
+      description: "All the specific Services provided by the Association MilanoGreen,\
+        \ they are characterized by a title and a description. Moreover, they have\
+        \ related Events and People in charge of them."
+      operationId: "serviceGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of displayable Services per page"
+        required: false
+        type: "integer"
+      - name: "offset"
+        in: "query"
+        description: "Pagination offset, default is 0"
+        required: false
+        type: "integer"
+      responses:
+        "200":
+          description: "All the Services, succesfully loaded"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Service"
+        "404":
+          description: "Service not found"
+      x-swagger-router-controller: "Service"
+  /service/{serviceId}:
+    get:
+      tags:
+      - "service"
+      summary: "Find the Service by its ID (identifier)"
+      description: "Returns one of the specific 6 services, allows us to access a\
+        \ page of the specific service"
+      operationId: "serviceServiceIdGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "serviceId"
+        in: "path"
+        description: "ID of service to be returned"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK, service found correctly"
+          schema:
+            $ref: "#/definitions/Service"
+        "403":
+          description: "Forbidden access"
+        "404":
+          description: "Service not found"
+      x-swagger-router-controller: "Service"
+  /service/{serviceId}/related_events:
+    get:
+      tags:
+      - "service"
+      summary: "Connect Service to its Events"
+      description: "Get the events related to a service"
+      operationId: "serviceServiceIdRelated_eventsGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "serviceId"
+        in: "path"
+        description: "ID of the service"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK, connection established correctly"
+          schema:
+            $ref: "#/definitions/Event"
+        "403":
+          description: "Forbidden access"
+        "404":
+          description: "Connection not found"
+      x-swagger-router-controller: "Service"
+  /service/{serviceId}/related_people:
+    get:
+      tags:
+      - "service"
+      summary: "Connect Service to its People"
+      description: "Get the people related to a service"
+      operationId: "serviceServiceIdRelated_peopleGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "serviceId"
+        in: "path"
+        description: "ID of the service"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK, connection established correctly"
+          schema:
+            $ref: "#/definitions/People"
+        "403":
+          description: "Forbidden access"
+        "404":
+          description: "Connection not found"
+      x-swagger-router-controller: "Service"
+  /person/{peopleId}/related_services:
+    get:
+      tags:
+      - "people"
+      summary: "Connect Person to its Services"
+      description: "Get the services related to a person"
+      operationId: "peoplePeopleIdRelated_servicesGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "peopleId"
+        in: "path"
+        description: "ID of the person"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK, connection established correctly"
+          schema:
+            $ref: "#/definitions/Service"
+        "403":
+          description: "Forbidden access"
+        "404":
+          description: "Connection not found"
+      x-swagger-router-controller: "People"
+  /person/{peopleId}/related_events:
+    get:
+      tags:
+      - "people"
+      summary: "Connect Person to its Events"
+      description: "Get the events related to a person"
+      operationId: "peoplePeopleIdRelated_eventsGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "peopleId"
+        in: "path"
+        description: "ID of the person"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK, connection established correctly"
+          schema:
+            $ref: "#/definitions/Event"
+        "403":
+          description: "Forbidden access"
+        "404":
+          description: "Connection not found"
+      x-swagger-router-controller: "People"
+  /event/{eventId}/related_services:
+    get:
+      tags:
+      - "event"
+      summary: "Connect Event to its Services"
+      description: "Get the Services related to an Event"
+      operationId: "eventEventIdRelated_servicesGET"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "eventId"
+        in: "path"
+        description: "ID of the event"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK, connection established correctly"
+          schema:
+            $ref: "#/definitions/Service"
+        "403":
+          description: "Forbidden access"
+        "404":
+          description: "Connection not found"
+      x-swagger-router-controller: "Event"
+definitions:
+  Event:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+        example: "Salviamo la Quercia Nana"
+      date:
+        type: "string"
+        example: "09/08/2020, 14:00 - 18:00"
+      month:
+        type: "string"
+        enum:
+        - "GEN"
+        - "FEB"
+        - "MAR"
+        - "APR"
+        - "MAG"
+        - "GIU"
+        - "LUG"
+        - "AGO"
+        - "SET"
+        - "OTT"
+        - "NOV"
+        - "DIC"
+      description:
+        type: "string"
+        example: "Simbolo di Porta Genova, la Quercia Nana oggi è in grave pericolo"
+      image:
+        type: "string"
+        example: "../assets/img/quercianana.png"
+      icon:
+        type: "string"
+        example: "../assets/img/volontariato.png"
+      contact_id:
+        type: "integer"
+        format: "int64"
+    title: "Event"
+    description: "One single of the Events organized by MilanoGreen"
+    example:
+      id: 0
+      name: "Salviamo la Quercia Nana"
+      date: "09/08/2020, 14:00 - 18:00"
+      month: "AGO"
+      description: "Simbolo di Porta Genova, la Quercia Nana oggi è in grave pericolo"
+      image: "../assets/img/quercianana.png"
+      icon: "../assets/img/volontariato.svg"
+      contact_id: 1
+  People:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+        example: "Tony Baviera"
+      image:
+        type: "string"
+        example: "../assets/img/tonybaviera.png"
+      role:
+        type: "string"
+        example: "Co-Executive Director"
+      motto:
+        type: "string"
+        example: "Un albero oggi per un domani migliore"
+      email:
+        type: "string"
+        example: "tony.baviera@milanogreen.it"
+      phone:
+        type: "string"
+        example: "+39 333 98 95 357"
+    title: "People"
+    description: "One of the people working in MilanoGreen Staff"
+    example:
+      email: "tony.baviera@milanogreen.it"
+      phone: "+39 333 98 95 357"
+      role: "Co-Executive Director"
+      id: 1
+      name: "Tony Baviera"
+      motto: "Un albero oggi per un domani migliore"
+      image: "../assets/img/tonybaviera.png"
+  Service:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      title:
+        type: "string"
+        example: "Volontariato"
+      description:
+        type: "string"
+        example: "Lavoriamo per migliorare la salute delle nostre foreste urbane"
+      image:
+        type: "string"
+        example: "../assets/img/volontariato.png"
+    title: "Service"
+    description: "The three Services provided by MilanoGreen"
+    example:
+      image: "../assets/img/volontariato.png"
+      description: "Lavoriamo per migliorare la salute delle nostre foreste urbane"
+      id: 0
+      title: "Volontariato"

@@ -1,0 +1,156 @@
+body{
+    color: #646464;
+    font-family: Nunito;
+
+}
+a:hover{
+    color:#02675A;
+}
+header{
+    padding-top: 156px;
+    color: #f8f8f8;
+    width: 100%;
+}
+.mask{
+    left:0;
+    bottom:0;
+    width:100%;
+}
+section{
+    padding: 5em 0 1em 0;
+}
+nav{
+   width: 100%;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em ;
+}
+.nav-item{
+    font-size: 1.1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+@keyframes fade-out-nav {
+    from{background-color: rgba(2,103,90,1);}
+    to {background-color: transparent;}
+  }
+.nav-bg-transparent{
+    background-color: transparent;
+    animation-name: fade-out-nav;
+    animation-duration: 0.8s;
+}
+@keyframes fade-in-nav {
+    from {background-color: transparent;}
+    to {background-color: rgba(2,103,90,1);
+        box-shadow: 2px 2px 4px 3px rgba(56, 56, 56,0.8);
+
+}
+
+}
+  
+.nav-bg-green{
+    background-color: rgba(2,103,90,1);
+    animation-name: fade-in-nav;
+    animation-duration: 0.8s;
+    box-shadow: 2px 2px 4px 3px rgba(56, 56, 56,0.8);
+
+}
+.banner-title h1{
+    padding: 0.7em 0 0.7em 0;
+    font-size: 3.5em;
+    font-weight: 800;
+}
+@media screen and (max-width: 400px) 
+{
+    .banner-title h1{
+        font-size: 2em;
+    }    
+}
+
+.breadcrumbs{
+    margin-top: 1em;
+    text-align:right;
+    font-style: italic;
+}
+.description-title{
+    color: black;
+    font-weight:bold;
+    font-size: 2em;
+    text-align: center;
+    padding: 0 0 2em 0;
+}
+
+#logo{
+    width:50%;
+}
+
+#bottom-path{
+    top:0;
+}
+footer{
+    background-color: #02675A ;
+}
+.footer-logo{
+    display: inline-block;
+    min-width: 50px;
+    width: auto;
+    padding: 0 1.5em 2em 0 ;
+}
+.footer-nav{
+    display: inline-block;
+    color: #f8f8f8;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
+.footer-nav h3{
+    font-weight: bold;
+}
+.footer-nav li{
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-nav hr{
+    border: 1.2px solid #f8f8f8;
+    border-radius: 2px;
+}
+.footer-nav ul{
+    list-style-type: none;
+    text-align: left;
+}
+.footer-nav a{
+    color: #f8f8f8;
+}
+.footer-nav a:hover{
+    color: #D0E562;
+    text-decoration: none;
+}
+
+.social-ul{
+    text-align: center;
+}
+.social-li{
+    display: inline-block;
+}
+.social-icon{
+    padding-top: 1.5em;
+    min-width: 40px;
+    width: 80%;
+    display: inline-block;
+}
+
+/*
+// stile per visualizzare la griglia bootstrap 
+div[class="row"] {
+    outline: 1px dotted rgba(11, 137, 255, 0.25) !important;
+}
+div[class^="col-"] {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    outline: 1px dotted rgba(0, 0, 0, 0.5) !important;
+}
+nav[class="row"] {
+    outline: 1px dotted rgba(21, 255, 204, 0.25) !important;
+}
+nav[class^="col-"] {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    outline: 1px dotted rgba(0, 0, 0, 0.5) !important;
+}

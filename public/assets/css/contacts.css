@@ -1,0 +1,20 @@
+header{
+    background-image: url('../img/banner-forrest.png');
+    background-color: black;
+}
+
+
+.icon{
+    width:2em;
+    margin-right: 2em;
+}
+
+.map{
+    margin-top: 3em;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 3em;
+}
+
+.more{
+    color: black;
+}

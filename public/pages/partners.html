@@ -18,10 +18,10 @@
   <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
 
   <!-- Page specific style -->
-  <link href="../css/partners.css" rel="stylesheet">
+  <link href="../assets/css/partners.css" rel="stylesheet">
     
     
 </head>
@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="../index.html">
           <img src="../assets/img/logo.svg" alt="Logo MilanoTree" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -53,7 +53,7 @@
               <a class="nav-link js-scroll-trigger" href="./joinus.html">Unisciti a noi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="./Contacts.html">Contatti</a>
+              <a class="nav-link js-scroll-trigger" href="./contacts.html">Contatti</a>
             </li>
             <li class="nav-item">
               <!--TODO: pensare al bottone colorato-->
@@ -100,7 +100,7 @@
 
   <!-- Description -->
   <div class="col-lg-8 mx-auto breadcrumbs">
-    <p>Partners /</p>
+    <p> Association / Partners /</p>
   </div>
 
   <section id="about">
@@ -129,18 +129,18 @@
 
           <div class="card col-lg-3">
               <a href="http://www.assofloromagazine.it/">
-            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/cropped-assofloro_magazine_logo-2-1.png" >
+            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/cropped-assofloro_magazine_logo-2-1.png" alt="assofloro" >
               </a>
           </div>
          <div class="card col-lg-3">
               <a href="http://www.isaitalia.org/">
-            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/logoconscritta.png" >
+            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/logoconscritta.png" alt="sia">
               </a>
           </div>
 
           <div class="card col-lg-3">
               <a href="https://www.greenplanner.it/">
-            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/new-header-gpm-white.png" >
+            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/new-header-gpm-white.png" alt="greenplanner" >
               </a>
           </div>
 
@@ -154,19 +154,19 @@
 
           <div class="card col-lg-3">
               <a href="http://www.aicg.it">
-            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/logo_PICCOLO.png" >
+            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/logo_PICCOLO.png" alt="aicg" >
               </a>
           </div>
         
 
           <div class="card col-lg-3">
               <a href="https://www.apgi.it/">
-            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/APGI-300x240.jpg" >
+            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/APGI-300x240.jpg" alt="apgci" >
               </a>
           </div>
              <div class="card col-lg-3">
               <a href="https://www.aiapp.net/">
-            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/aiapp-logo-new.png" >
+            <img class="card-img-top img-fluid" src="../assets/img/association/Partners/aiapp-logo-new.png" alt="aiapp">
               </a>
           </div>
 
@@ -177,7 +177,11 @@
 
  
   </section>
-
+  <div class="container">
+    <a href="./association.html">
+      <button class="association-btn"> &#x2B06 Associazione </button>
+    </a>
+  </div>
   <!-- Footer wave svg element -->
   <div class="footer-mask">
     <svg viewBox="0 0 800 150">
@@ -199,38 +203,36 @@
 
 
 
-      <!--Footer navigation-->
-      <div class="footer-nav">
-        <h3>Navigation</h3>
-        <hr />
-       
-          <div class="row justify-content-between pr-5">
-            <ul>
-            <li>
-              <a href="../index.html">Home</a>
-            </li>
-            <li >
-              <a href="#about">Associazione</a>
-            </li>
-            <li >
-              <a href="./services.html">Servizi</a>
-            </ul>
-            <ul>
-            </li>
-            <li>
-              <a href="./events.html">Eventi</a>
-            </li>
-            <li>
-              <a href="./joinus.html">Unisciti a noi</a>
-            </li>
-            <li>
-              <a href="./supportus">Supportaci</a>
-
-            </li>
-            </ul>
-          </div>
- 
-      </div>
+            <!--Footer navigation {NOT HOME PAGE} -->
+            <div class="footer-nav">
+              <h3>Navigation</h3>
+              <hr />
+                <div class="row justify-content-between pr-5">
+                  <ul>
+                  <li>
+                    <a href="../index.html">Home</a>
+                  </li>
+                  <li >
+                    <a href="./association.html">Associazione</a>
+                  </li>
+                  <li >
+                    <a href="./services.html">Servizi</a>
+                  </ul>
+                  <ul>
+                  </li>
+                  <li>
+                    <a href="./events.html">Eventi</a>
+                  </li>
+                  <li>
+                    <a href="./joinus.html">Unisciti a noi</a>
+                  </li>
+                  <li>
+                    <a href="./supportus.html">Supportaci</a>
+                  </li>
+                  </ul>
+                </div>
+            </div>
+      
 
       <!-- Social icons-->
       <ul class="social-ul">
@@ -265,8 +267,8 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="../js/scrolling-nav.js"></script>
-  <script src="../js/fading-nav.js"></script>
+  <script src="../assets/js/scrolling-nav.js"></script>
+  <script src="../assets/js/fading-nav.js"></script>
 
 
 </body>

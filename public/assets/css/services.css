@@ -1,0 +1,29 @@
+header{
+    background-image: url('../img/banner-forrest.png');
+    background-color: black;
+}
+
+.deck{
+    text-align: center;
+}
+.card{
+    border: none;
+    display: inline-block;
+    vertical-align : top;
+
+}
+.card img{
+    border-radius: 3em;
+    display:  inline-block; 
+}
+.card-text{
+    font-size: 1.3em;
+    color: black;
+    text-align: center;
+    display:  inline;
+}
+
+.footer-mask{
+    bottom:0;
+    left:0;
+}

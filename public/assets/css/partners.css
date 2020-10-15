@@ -1,0 +1,45 @@
+header{
+    background-image: url('../img/banner-forrest.png');
+    background-color: black;
+}
+
+.deck{
+    text-align: center;
+}
+.card{
+    border: none;
+    display: inline-block;
+    vertical-align : top;
+
+}
+.card img{
+    display:  inline-block; 
+    background-color:none;
+}
+
+.footer-mask{
+    bottom:0;
+    left: 0;
+}
+
+
+#back-to-association{
+    margin-top: 2em;
+
+}
+
+.association-btn{
+    margin-top: 3em;
+    background: #02675A;
+    color: #f8f8f8;
+    border: none;
+    font-weight: 700;
+    padding: 1em 1em;
+    font-size: 1.2em;
+    border-radius: 2em;
+    margin-bottom:2em;
+
+}
+.association-btn:hover{
+    background-color: #5F9EA0;
+}

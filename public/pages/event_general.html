@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Servizi - MilanoGreen</title>
+    <title>Evento - MilanoGreen</title>
 
     <!-- Import fonts -->
     <link
@@ -18,10 +18,10 @@
     <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- Page specific style -->
-    <link href="../css/event_general.css" rel="stylesheet">
+    <link href="../assets/css/event_general.css" rel="stylesheet">
 
 </head>
 
@@ -30,7 +30,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <a class="navbar-brand js-scroll-trigger" href="../index.html">
                     <img src="../assets/img/logo.svg" alt="Logo MilanoTree" id="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -51,6 +51,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="./joinus.html">Unisciti a noi</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="./contacts.html">Contatti</a>
                         </li>
                         <li class="nav-item">
                             <!--TODO: pensare al bottone colorato-->
@@ -97,84 +100,12 @@
 
     <!-- Breadcrumbs -->
     <div class="col-lg-8 mx-auto breadcrumbs">
-        <p>Associazione /</p>
+        <p id="breadcrumbs"></p>
     </div>
 
     <!-- Description -->
     <section id="single-event">
-        <div class="container">
-
-            <div class="row justify-content-center align-items-center description-title">
-
-                <h2>Salviamo la Quercia Nana</h2>
-
-                <img src="../assets/img/events/volontariato.svg" class="type-icon" />
-
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-lg-6 mx-auto">
-                    <img src="../assets/img/events/quercianana.png" class="desc-img" />
-
-                </div>
-
-                <div class="col-lg-6 mx-auto">
-
-                    <div class="row row-col-2 align-items-center">
-                        <div class="col">
-                            <h4 class="info-el">Dove</h4>
-                        </div>
-                        <div class="col">
-                            <p class="info-el">Via Andrea Solari, 13 - Milano
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row align-items-center ">
-                        <div class="col">
-                            <h4 class="info-el">Quando</h4>
-                        </div>
-                        <div class="col">
-                            <p class="info-el">
-                                28 Aprile 2020, 10.00-12.30
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row align-items-top mt-1">
-                        <div class="col">
-                            <h4 class="info-el">Contatto</h2>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li>
-                                    <a href="/tonybaviera">
-                                        Tony Baviera
-                                    </a>
-                                </li>
-                                <li class="email">
-                                    <a href="mailto://tb@mg.com">
-                                        tony.baviera@milanogreen.com
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="lead description-text text-justify">
-                        <h4>Descrizione</h4>
-
-                        <p>
-                            Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere più ammirata a
-                            causa della sempre maggiore infestazione di piante non autoctone che minano il suo
-                            ecosistema. Insieme possiamo salvare questo simbolo della nostra Milano.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
+        <!-- filled by js -->
     </section>
 
 
@@ -182,43 +113,7 @@
     <!-- Servizi correlati -->
 
     <section id="related-services">
-        <div class="container">
-            <div class="row justify-content-center">
-                <h2> Servizi correlati</h2>
-            </div>
-
-            <div class="row justify-content-around">
-
-                <div class="card col-lg-3">
-                    <img class="card-img-top img-fluid" src="../assets/img/association/partners.png" alt="partners" />
-                    <div class="card-body">
-                        <p class="card-text">
-                            Partners
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class="card col-lg-3">
-                    <img class="card-img-top img-fluid" src="../assets/img/association/partners.png" alt="partners" />
-                    <div class="card-body">
-                        <p class="card-text">
-                            Partners
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card col-lg-3">
-                    <img class="card-img-top img-fluid" src="../assets/img/association/partners.png" alt="partners" />
-                    <div class="card-body">
-                        <p class="card-text">
-                            Partners
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        <!-- filled by js -->
     </section>
 
 
@@ -247,38 +142,36 @@
 
 
 
-                <!--Footer navigation-->
-                <div class="footer-nav">
-                    <h3>Navigation</h3>
-                    <hr />
+      <!--Footer navigation {NOT HOME PAGE} -->
+      <div class="footer-nav">
+        <h3>Navigation</h3>
+        <hr />
+          <div class="row justify-content-between pr-5">
+            <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li >
+              <a href="./association.html">Associazione</a>
+            </li>
+            <li >
+              <a href="./services.html">Servizi</a>
+            </ul>
+            <ul>
+            </li>
+            <li>
+              <a href="./events.html">Eventi</a>
+            </li>
+            <li>
+              <a href="./joinus.html">Unisciti a noi</a>
+            </li>
+            <li>
+              <a href="./supportus.html">Supportaci</a>
+            </li>
+            </ul>
+          </div>
+      </div>
 
-                    <div class="row justify-content-between pr-5">
-                        <ul>
-                            <li>
-                                <a href="../index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="./association.html">Associazione</a>
-                            </li>
-                            <li>
-                                <a href="./services.html">Servizi</a>
-                        </ul>
-                        <ul>
-                            </li>
-                            <li>
-                                <a href="./events.html">Eventi</a>
-                            </li>
-                            <li>
-                                <a href="./joinus.html">Unisciti a noi</a>
-                            </li>
-                            <li>
-                                <a href="./supportus">Supportaci</a>
-
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
 
                 <!-- Social icons-->
                 <ul class="social-ul">
@@ -313,8 +206,9 @@
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="../js/scrolling-nav.js"></script>
-    <script src="../js/fading-nav.js"></script>
+    <script src="../assets/js/scrolling-nav.js"></script>
+    <script src="../assets/js/fading-nav.js"></script>
+    <script src="../assets/js/fillers/event_general.js"></script>
 
 
 </body>

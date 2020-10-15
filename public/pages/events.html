@@ -18,10 +18,10 @@
   <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
 
   <!-- Page specific style CSS -->
-  <link href="../css/events.css" rel="stylesheet">
+  <link href="../assets/css/events.css" rel="stylesheet">
 
 </head>
 
@@ -30,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="../index.html">
           <img src="../assets/img/logo.svg" alt="Logo MilanoTree" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -46,11 +46,14 @@
               <a class="nav-link js-scroll-trigger" href="./services.html">Servizi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Eventi</a>
+              <a class="nav-link js-scroll-trigger" href="#filtri">Eventi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="./joinus.html">Unisciti a noi</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./contacts.html">Contatti</a>
+            </li>               
             <li class="nav-item">
               <!--TODO: pensare al bottone colorato-->
               <a class="nav-link js-scroll-trigger" href="./supportus.html">Supportaci</a>
@@ -104,21 +107,21 @@
 
 
   <!-- Filter bar -->
-  <div class="container filter-bar ">
+  <div class="container filter-bar " id="filtri">
     <div class="row align-items-center justify-content-around bytype-row mt-5">
       <button class="filter-btn onlytext-btn active type-btn" onclick="filterTypes('ALL')" id="all-types-btn">
         <p>TUTTI</p>
       </button>
       <button class="filter-btn type-btn" onclick="filterTypes('EDU')">
-        <img src="../assets/img/events/education.svg" />
+        <img src="../assets/img/events/education.svg" alt = "educazione"/>
         <p>Educazione</p>
       </button>
-      <button class="filter-btn type-btn" onclick="filterTypes('VOL')">
-        <img src="../assets/img/events/volontariato.svg" />
+      <button class="filter-btn type-btn" onclick="filterTypes('VOL')" >
+        <img src="../assets/img/events/volontariato.svg" alt = "volontariato"/>
         <p>Volontariato</p>
       </button>
-      <button class="filter-btn type-btn" onclick="filterTypes('VISITS')">
-        <img src="../assets/img/events/explore.svg" />
+      <button class="filter-btn type-btn" onclick="filterTypes('EXP')">
+        <img src="../assets/img/events/explore.svg" alt = "esplora" />
         <p>Visite</p>
       </button>
 
@@ -128,35 +131,6 @@
     <div class="row align-items-center justify-content-around bymonth-row" id="btn-row2">
       <button class="filter-btn onlytext-btn active month-btn" onclick="filterMonths('ALL')" id="all-months-btn">
         <p>TUTTI</p>
-      </button>
-
-      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('GIU')">
-        <p>GIU</p>
-      </button>
-
-
-      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('LUG')">
-        <p>LUG</p>
-      </button>
-
-      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('AGO')">
-        <p>AGO</p>
-      </button>
-
-      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('SET')">
-        <p>SET</p>
-      </button>
-
-      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('OTT')">
-        <p>OTT</p>
-      </button>
-
-      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('NOV')">
-        <p>NOV</p>
-      </button>
-
-      <button class="filter-btn onlytext-btn month-btn" onclick="filterMonths('DEC')">
-        <p>DIC</p>
       </button>
 
     </div>
@@ -173,131 +147,6 @@
   </section>
   <!-- START EVENTS  -->
   <div id="all-events">
-
-    <section class="event AGO EDU">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-lg-4 ">
-            <img src="../assets/img/events/planting.png" class="event-img">
-          </div>
-
-          <div class="col-lg-1">
-            <img src="../assets/img/events/education.svg" class="event-type-icon" />
-          </div>
-
-          <div class="col-lg-5 ">
-            <div class="event-info">
-
-              <h3 class="event-title">Piantare i pini</h3>
-              <h4 class="event-time"> 28 Agosto 2020, 10.00-12.00 </h4>
-
-              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere
-                più
-                ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
-              </p>
-              <a href="/eventoxxx" class="more"> Continua</a>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="event DEC EDU">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-lg-4 ">
-            <img src="../assets/img/events/quercianana.png" class="event-img">
-          </div>
-
-          <div class="col-lg-1">
-            <img src="../assets/img/events/education.svg" class="event-type-icon" />
-          </div>
-
-          <div class="col-lg-5 ">
-            <div class="event-info">
-
-              <h3 class="event-title">Imparare le piante</h3>
-              <h4 class="event-time"> 28 Dicembre 2020, 10.00-12.00 </h4>
-
-              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere
-                più
-                ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
-              </p>
-              <a href="/eventoxxx" class="more"> Continua</a>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="event SET VISITS">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-lg-4 ">
-            <img src="../assets/img/events/planting.png" class="event-img">
-          </div>
-
-          <div class="col-lg-1">
-            <img src="../assets/img/events/explore.svg" class="event-type-icon" />
-          </div>
-
-          <div class="col-lg-5 ">
-            <div class="event-info">
-
-              <h3 class="event-title">Visita al boschetto</h3>
-              <h4 class="event-time"> 28 Settembre 2020, 10.00-12.00 </h4>
-
-              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere
-                più
-                ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
-              </p>
-              <a href="/eventoxxx" class="more"> Continua</a>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="event GIU VOL">
-      <div class="container" class="june explore">
-        <div class="row justify-content-center">
-
-          <div class="col-lg-4 ">
-            <img src="../assets/img/events/verdeurbano.png" class="event-img">
-          </div>
-
-          <div class="col-lg-1">
-            <img src="../assets/img/events/volontariato.svg" class="event-type-icon" />
-          </div>
-
-          <div class="col-lg-5 ">
-            <div class="event-info">
-
-              <h3 class="event-title">Salviamo la Quercia Nana</h3>
-              <h4 class="event-time"> 28 Giugno 2020, 10.00-12.00 </h4>
-
-              <p class="event-description"> Simbolo di Porta Genova, la Quercia Nana oggi rischia di non poter essere
-                più
-                ammirata a causa della sempre maggiore infestazione di piante non autoctone che minano...
-              </p>
-              <a href="/eventoxxx" class="more"> Continua</a>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
 
 
 
@@ -331,38 +180,38 @@
 
 
 
-        <!--Footer navigation-->
-        <div class="footer-nav">
-          <h3>Navigation</h3>
-          <hr />
-
+      <!--Footer navigation {NOT HOME PAGE} -->
+      <div class="footer-nav">
+        <h3>Navigation</h3>
+        <hr />
           <div class="row justify-content-between pr-5">
             <ul>
-              <li>
-                <a href="../index.html">Home</a>
-              </li>
-              <li>
-                <a href="#about">Associazione</a>
-              </li>
-              <li>
-                <a href="./services.html">Servizi</a>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li >
+              <a href="./association.html">Associazione</a>
+            </li>
+            <li >
+              <a href="./services.html">Servizi</a>
             </ul>
             <ul>
-              </li>
-              <li>
-                <a href="./events.html">Eventi</a>
-              </li>
-              <li>
-                <a href="./joinus.html">Unisciti a noi</a>
-              </li>
-              <li>
-                <a href="./supportus">Supportaci</a>
-
-              </li>
+            </li>
+            <li>
+              <a href="./events.html">Eventi</a>
+            </li>
+            <li>
+              <a href="./joinus.html">Unisciti a noi</a>
+            </li>
+            <li>
+              <a href="./supportus.html">Supportaci</a>
+            </li>
             </ul>
           </div>
+      </div>
 
-        </div>
+
+
 
         <!-- Social icons-->
         <ul class="social-ul">
@@ -397,9 +246,12 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="../js/scrolling-nav.js"></script>
-  <script src="../js/fading-nav.js"></script>
-  <script src="../js/events-filter.js"></script>
+  <script src="../assets/js/scrolling-nav.js"></script>
+  <script src="../assets/js/fading-nav.js"></script>
+  <script src="../assets/js/events-filter.js"></script>
+
+  <!-- Filler -->
+  <script src="../assets/js/fillers/events.js"></script>
 
 
 </body>

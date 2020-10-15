@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Association - MilanoGreen</title>
+  <title>Supportaci - MilanoGreen</title>
 
   <!-- Import fonts -->
   <link
@@ -18,7 +18,12 @@
   <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- Page specific style -->
+  <link href="../assets/css/supportus.css" rel="stylesheet">
+
+
 
 </head>
 
@@ -27,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="../index.html">
           <img src="../assets/img/logo.svg" alt="Logo MilanoTree" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -37,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Associazione</a>
+              <a class="nav-link js-scroll-trigger" href="./association.html">Associazione</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="./services.html">Servizi</a>
@@ -49,8 +54,11 @@
               <a class="nav-link js-scroll-trigger" href="./joinus.html">Unisciti a noi</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./contacts.html">Contatti</a>
+            </li>
+            <li class="nav-item">
               <!--TODO: pensare al bottone colorato-->
-              <a class="nav-link js-scroll-trigger" href="./supportus.html">Supportaci</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Supportaci</a>
 
             </li>
 
@@ -62,13 +70,13 @@
 
     <!-- Section title banner -->
     <div class="container text-center banner-title">
-      <h1>Associazione</h1>
+      <h1>Supportaci</h1>
     </div>
     <!--//END Section title banner -->
 
 
 
-  <!-- Header waves svg element  -->
+    <!-- Header waves svg element  -->
     <div class="mask">
       <svg viewBox="0 0 1433 150">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -90,70 +98,154 @@
   </header>
 
 
-
   <!-- Description -->
   <div class="col-lg-8 mx-auto breadcrumbs">
-    <p>Associazione /</p>
+    <p>Supportaci /</p>
   </div>
 
-  <section id="about">
+
+
+  <div class="container filter-bar" id="about">
+    <div class="row align-items-center justify-content-around bytype-row">
+
+      <button class="filter-btn type-btn active " onclick="filterTypes('PAN')">
+        <p>Panoramica</p>
+      </button>
+      <button class="filter-btn type-btn" onclick="filterTypes('DON')">
+        <p>Donazione</p>
+      </button>
+    </div>
+  </div>
+
+  <section class="event PAN">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="description-title">Dediti a proteggere le foreste urbane di Milano piantando, conservando ed
-            educando.</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto ">
 
+          <img class="card-img-top img-fluid" src="../assets/img/supportus/panoramica.png" alt="Panoramica">
 
-          <p class="lead description-text text-justify">Fondata nel 1996, MilanoGreen lavora instancabilmente per affrontare la
-            perdita di alberi di Milano, proteggere le sue foreste e creare nuovi spazi verdi. Potenziata dalla sua
-            meravigliosa comunità di volontari, MilanoGreen serve l'area metropolitana di Milano ed è cresciuta fino a
-            diventare una delle organizzazioni no profit più conosciute e supportate dell’hinterland.</p>
+        </div>
+        <div class="col-lg-6 mx-auto ">
+
+          <p class="lead description-text text-justify">Milanogreen ha bisogno delle donazioni per procurarsi il
+            materiale e mettere in piedi i servizi che contribuiscono a rendere la nostra società un posto migliore.
+            Abbiamo bisogno del tuo aiuto, ci sono tanti modi per donare e rendere Milano una città più verde e
+            sostenibile.
+            Il più diretto è donare del denaro che i nostri collaboratori sapranno gestire al meglio, in alternativa,
+            una scelta più romantica, è donare un albero a una persona amata. Infine nel caso avessi una tua attività
+            saremo lieti di farci sponsorizzare se quello che fai rispetta le nostre policy etiche.</p>
 
         </div>
       </div>
     </div>
   </section>
+
+  <section class="event DON hidden">
+
+    <div class="container">
+      <div class="row align-items-top">
+        <div class="col-lg-6 mx-auto ">
+          <h3>
+            <b>
+              Aiuta Milano a sviluppare polmoni sani!
+            </b>
+          </h3>
+          <p>
+            I donatori sono le radici di ogni albero che piantiamo. Più puoi dare, più noi possiamo fare.
+            Nessun ammontare è troppo poco, ogni euro è un mattoncino in più per un futuro migliore.
+            Dopo aver donato, se vuoi che il tuo denaro venga utilizzato in un modo particolare, scrivici una mail!
+        </div>
+
+        <div class="col-lg-6 mx-auto ">
+
+
+          <div class="donation-box">
+            <div class="container">
+
+              <div class="row justify-content-md-center">
+                <div class="col-md-auto title">
+                  <h2>Voglio donare</h2>
+                </div>
+              </div>
+
+              <div class="row justify-content-md-center align-items-center">\
+
+                <button class="col col-lg-3 importo bg-active" onclick="showComment('#dona30'); console.log('hai cliccato')">
+                  30€
+                </button>
+
+                <button class="col col-lg-3 importo" onclick="showComment('#dona50');">
+                  50€
+                </button>
+                <button class="col col-lg-3 importo" onclick="showComment('#dona100');">
+                  100€
+                </button>
+              </div>
+
+
+              <div class="row justify-content-md-center comment" id="dona30">
+                <div class="col col-lg-2 icon">
+
+                  <img src="../assets/img/supportus/sprout.svg" alt="germoglio" class="icon" />
+
+                </div>
+
+                <div class="col col-lg-9">
+                  <p>Il tuo aiuto permetterà di piantare fino a 5 nuovi alberi</p>
+                </div>
+              </div>
+
+
+              <div class="row justify-content-md-center comment" id="dona50">
+                <div class="col col-lg-2 icon">
+
+                  <img src="../assets/img/supportus/tree.svg" alt="albero" class="icon" />
+
+                </div>
+
+                <div class="col col-lg-9">
+                  <p>Il tuo aiuto permetterà di piantare fino a 20 nuovi alberi</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-md-center comment" id="dona100">
+                <div class="col col-lg-2 icon">
+
+                  <img src="../assets/img/supportus/forest.svg" alt="foresta" class="icon" />
+
+                </div>
+
+                <div class="col col-lg-9">
+                  <p>Il tuo aiuto permetterà di piantare fino a 50 nuovi alberi</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-md-center align-items-center">\
+
+                <button class="col col-lg-6 dona" onclick="window.alert('A causa del grande numero di donazioni, il nostro porcellino salvadanaio non è in grado di contenere altro denaro. Riprova più tardi.')">
+                  Dona ora
+                </button>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
 
 
 
 
   <!-- Thumbnails to link to other pages -->
-  <section id="thumnail-links">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto deck">
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/staff.png" alt="staff" />
-            <div class="card-body">
-              <p class="card-text">
-                Staff
-              </p>
-            </div>
-          </div>
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/locations.png" alt="locations" />
-            <div class="card-body">
-              <p class="card-text">
-                Locations
-              </p>
-            </div>
-          </div>
-
-          <div class="card col-lg-3">
-            <img class="card-img-top img-fluid" src="../assets/img/association/partners.png" alt="partners" />
-            <div class="card-body">
-              <p class="card-text">
-                Partners
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <!-- Footer wave svg element -->
@@ -170,25 +262,24 @@
   <footer class="py-5 px-5 col-lg-12">
     <div class="align-items-center">
 
-    <div class="row align-items-center justify-content-around">
+      <div class="row align-items-center justify-content-around">
 
-      <!-- Footer logo-->
-      <img src="../assets/img/logo.svg" alt="logo" class="footer-logo" />
+        <!-- Footer logo-->
+        <img src="../assets/img/logo.svg" alt="logo" class="footer-logo" />
 
 
 
-      <!--Footer navigation-->
+      <!--Footer navigation {NOT HOME PAGE} -->
       <div class="footer-nav">
         <h3>Navigation</h3>
         <hr />
-       
           <div class="row justify-content-between pr-5">
             <ul>
             <li>
               <a href="../index.html">Home</a>
             </li>
             <li >
-              <a href="#about">Associazione</a>
+              <a href="./association.html">Associazione</a>
             </li>
             <li >
               <a href="./services.html">Servizi</a>
@@ -202,34 +293,33 @@
               <a href="./joinus.html">Unisciti a noi</a>
             </li>
             <li>
-              <a href="./supportus">Supportaci</a>
-
+              <a href="./supportus.html">Supportaci</a>
             </li>
             </ul>
           </div>
- 
       </div>
 
-      <!-- Social icons-->
-      <ul class="social-ul">
-        <li class="social-li">
-          <img class="social-icon" src="../assets/img/social/telegram.svg" alt="telegram">
-        </li>
-        <li class="social-li">
-          <img class="social-icon" src="../assets/img/social/facebook.svg" alt="facebook">
-        </li>
-        <li class="social-li">
-          <img class="social-icon" src="../assets/img/social/instagram.svg" alt="instagram">
-        </li>
-        <li class="social-li">
-          <img class="social-icon" src="../assets/img/social/twitter.svg" alt="twitter">
-        </li>
-       
+
+        <!-- Social icons-->
+        <ul class="social-ul">
+          <li class="social-li">
+            <img class="social-icon" src="../assets/img/social/telegram.svg" alt="telegram">
+          </li>
+          <li class="social-li">
+            <img class="social-icon" src="../assets/img/social/facebook.svg" alt="facebook">
+          </li>
+          <li class="social-li">
+            <img class="social-icon" src="../assets/img/social/instagram.svg" alt="instagram">
+          </li>
+          <li class="social-li">
+            <img class="social-icon" src="../assets/img/social/twitter.svg" alt="twitter">
+          </li>
 
 
-      </ul>
 
-    </div>
+        </ul>
+
+      </div>
 
     </div>
 
@@ -243,11 +333,12 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="../js/scrolling-nav.js"></script>
-  <script src="../js/fading-nav.js"></script>
+  <script src="../assets/js/scrolling-nav.js"></script>
+  <script src="../assets/js/fading-nav.js"></script>
+  <script src="../assets/js/donationform.js"></script>
+  <script src="../assets/js/supportus.js"></script>
 
 
 </body>
 
 </html>
-<!--prova per vedere se mi ricordo come si committa-->

@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Services - MilanoGreen</title>
+  <title>Unisiciti a noi - MilanoGreen</title>
 
   <!-- Import fonts -->
   <link
@@ -18,10 +18,10 @@
   <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
 
   <!-- Page specific style -->
-  <link href="../css/joinus.css" rel="stylesheet">
+  <link href="../assets/css/joinus.css" rel="stylesheet">
 
 
 </head>
@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="./index.hmtl">
+        <a class="navbar-brand js-scroll-trigger" href="../index.html">
           <img src="../assets/img/logo.svg" alt="Logo MilanoTree" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -50,10 +50,10 @@
               <a class="nav-link js-scroll-trigger" href="./events.html">Eventi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="./joinus.html">Unisciti a noi</a>
+              <a class="nav-link js-scroll-trigger" href="#filtri">Unisciti a noi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="./Contacts.html">Contatti</a>
+              <a class="nav-link js-scroll-trigger" href="./contacts.html">Contatti</a>
             </li>
             <li class="nav-item">
               <!--TODO: pensare al bottone colorato-->
@@ -118,7 +118,7 @@
 
   <!-- Filter bar -->
 
-  <div class="container filter-bar">
+  <div class="container filter-bar" id="filtri">
     <div class="row align-items-center justify-content-around bytype-row">
 
       <button class="filter-btn type-btn active " onclick="filterTypes('PAN')">
@@ -187,9 +187,11 @@
       </p>
 
       <div class="row justify-content-center">
+        <form action="mailto:info@milanogreen.it" method="GET">
         <button class="contattaci-btn">
           Contattaci subito!
         </button>
+          </form>
       </div>
 
       <h3>Sei una società interessata a sponsorizzare un progetto?</h3>
@@ -210,9 +212,11 @@
 
 
       <div class="row justify-content-center">
+        <form action="forms@milanogreen.it" method="GET">
         <button class="contattaci-btn">
           Compila
         </button>
+          </form>
 
       </div>
 
@@ -233,7 +237,7 @@
         la nostra tettoia urbana!
       </p>
 
-      <img src="../assets/img/joinus/bannerino.jpg" class="inter-banner" />
+      <img src="../assets/img/joinus/bannerino.jpg" class="inter-banner" alt="chi scava scopre"/>
       <h3>Progetti del sabato</h3>
 
       <p>L'attività di volontariato più popolare sono i nostri progetti settimanali di sabato. MilanoGreen ha
@@ -248,7 +252,7 @@
         prossimi eventi!</p>
 
 
-      <img src="../assets/img/joinus/prato.jpg" class="inter-banner" />
+      <img src="../assets/img/joinus/prato.jpg" class="inter-banner" alt="progetti del sabato"/>
       <h3>Progetti settimanali</h3>
       <p>
         Gli alberi di Milano hanno bisogno di aiuto anche durante la settimana. Annunciamo le opportunità nei giorni
@@ -263,9 +267,11 @@
       </p>
 
       <div class="row justify-content-center">
+        <form action="mailto:info@milanogreen.it" method="GET">
         <button class="contattaci-btn">
           Contattaci subito!
         </button>
+          </form>
 
       </div>
     </div>
@@ -313,9 +319,11 @@
       </table>
 
       <div class="row justify-content-center">
+        <form action="mailto:info@milanogreen.it" method="GET">
         <button class="contattaci-btn">
           Contattaci subito!
         </button>
+          </form>
       </div>
   </section>
 
@@ -340,38 +348,36 @@
 
 
 
-        <!--Footer navigation-->
-        <div class="footer-nav">
-          <h3>Navigation</h3>
-          <hr />
-
+              <!--Footer navigation {NOT HOME PAGE} -->
+      <div class="footer-nav">
+        <h3>Navigation</h3>
+        <hr />
           <div class="row justify-content-between pr-5">
             <ul>
-              <li>
-                <a href="../index.html">Home</a>
-              </li>
-              <li>
-                <a href="#about">Associazione</a>
-              </li>
-              <li>
-                <a href="./services.html">Servizi</a>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li >
+              <a href="./association.html">Associazione</a>
+            </li>
+            <li >
+              <a href="./services.html">Servizi</a>
             </ul>
             <ul>
-              </li>
-              <li>
-                <a href="./events.html">Eventi</a>
-              </li>
-              <li>
-                <a href="./joinus.html">Unisciti a noi</a>
-              </li>
-              <li>
-                <a href="./supportus">Supportaci</a>
-
-              </li>
+            </li>
+            <li>
+              <a href="./events.html">Eventi</a>
+            </li>
+            <li>
+              <a href="./joinus.html">Unisciti a noi</a>
+            </li>
+            <li>
+              <a href="./supportus.html">Supportaci</a>
+            </li>
             </ul>
           </div>
+      </div>
 
-        </div>
 
         <!-- Social icons-->
         <ul class="social-ul">
@@ -406,10 +412,9 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="../js/scrolling-nav.js"></script>
-  <script src="../js/fading-nav.js"></script>
-  <script src="../js/joinus.js"></script>
->>>>>>> de9330b1c9cabf38b43ac7453760c761122918b3
+  <script src="../assets/js/scrolling-nav.js"></script>
+  <script src="../assets/js/fading-nav.js"></script>
+  <script src="../assets/js/joinus.js"></script>
 
 </body>
 

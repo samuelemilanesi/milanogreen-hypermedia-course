@@ -1,0 +1,210 @@
+header{
+    background-image: url('../img/banner-forrest.png');
+    background-color: black;
+}
+
+
+.filter-bar{
+    background-color: none;
+    color: #f8f8f8;
+    border-radius: 3em;
+    padding:0;
+}
+
+.filter-bar p{
+    padding:0 0.5em;
+    margin:0;
+
+}
+.bytype-row{
+    background-color: #5F9EA0;
+    border-radius : 3em;
+}
+
+.filter-btn{
+    display: inline-block;
+    border-radius: 1em;
+    border: none;
+    text-align: center; 
+    line-height: 3em;
+    font-weight: bold;
+    font-size: 1em;
+    background: transparent;
+    color: black;
+}
+.filter-btn:hover{
+    background-color:#02675A;
+}
+.filter-btn:active{
+    background-color: #02675A;
+}
+.active{
+    background-color: #02675A;
+}
+
+.filter-btn img{
+    display: inline-block;
+    width: 20%;
+    min-width: 30px;
+    line-height: normal;
+    margin-right: 0.5em;
+}
+.filter-btn p{
+    color : white;
+    display: inline-block;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.filter-label{
+    padding-top: 0.75rem;
+    font-size:1.4em;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.onlytext-btn{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.more{
+    float: right;
+    text-decoration: underline;
+    text-align: right;
+    color: #688D90;
+}
+.event-img{
+    width:100%;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+
+.description-text{
+    padding:0
+}
+
+.footer-mask{
+    bottom:0;
+    left:0;
+}
+
+
+.event img{
+    border-radius: 3em;
+    display:  inline-block; 
+    margin-bottom: 2em;
+
+}
+
+/* Button */
+
+input[type="submit"].my-submit {
+    background: #02675A;
+    color: #f8f8f8;
+    border: none;
+    font-weight: 700;
+    padding: 1em 1em;
+    font-size: 1.2em;
+    border-radius: 2em;
+    }
+    input[type="submit"].my-submit:hover{
+        background-color: #5F9EA0;
+    }
+    
+
+/* Bootstrap cards styling*/
+.deck{
+    text-align: center;
+   
+}
+.card{
+    border: none;
+    display: inline-block;
+
+}
+.card img{
+    border-radius: 3em;
+    display:  inline-block; 
+
+}
+.card-text{
+    font-size: 1.3em;
+    color: black;
+    text-align : center;
+ 
+}
+
+
+/* Filtering */
+
+.hidden{
+    display:none;
+}
+
+#zero-events{
+    margin: 3em 0 8em 0;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.donation-box{
+    border-radius: 2em;
+    background-color:rgba(2,103,90,1);
+    padding:2em;
+}
+.title{
+    color: #f8f8f8;
+    margin:1em;
+    border-bottom: 2px solid #f8f8f8;
+}
+.icon{
+    margin-right: 1em;}
+.importo{
+    text-align: center;
+    color: #f8f8f8;
+    border: 2px solid #f8f8f8;
+    border-radius: 2em;
+    font-size:1.5em;
+    margin:0 0.5em 0 0.5em;
+    padding: 0.5em;
+    background-color:rgba(2,103,90,1);
+}
+.dona{
+    text-align: center;
+    color: #f8f8f8;
+    border: 2px solid #f8f8f8;
+    border-radius: 2em;
+    font-size:1.5em;
+    margin:2em 0.5em 0 0.5em;
+    padding: 0.5em;
+    background-color:rgba(2,103,90,1);
+}
+
+.importo:hover{
+    background-color:#5F9EA0;
+}
+.importo:active{
+    background-color:#5F9EA0;
+}
+.bg-active{
+    background-color:#5F9EA0;}
+
+.icon{ 
+    width:3em;
+    border-radius: 0;
+}
+.comment{ 
+    border-radius: 2em;
+    background-color:#5F9EA0;
+    color: #f8f8f8;
+    font-size: 1.5em; 
+    padding: 0.5em;
+    margin:1em;
+}

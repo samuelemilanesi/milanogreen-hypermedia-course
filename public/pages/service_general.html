@@ -18,10 +18,10 @@
   <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
 
   <!-- Page specific style -->
-  <link href="../css/service_general.css" rel="stylesheet">
+  <link href="../assets/css/service_general.css" rel="stylesheet">
 
 
 </head>
@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="./index.hmtl">
+        <a class="navbar-brand js-scroll-trigger" href="../index.html">
           <img src="../assets/img/logo.svg" alt="Logo MilanoTree" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -53,7 +53,7 @@
               <a class="nav-link js-scroll-trigger" href="./joinus.html">Unisciti a noi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="./Contacts.html">Contatti</a>
+              <a class="nav-link js-scroll-trigger" href="./contacts.html">Contatti</a>
             </li>
             <li class="nav-item">
               <!--TODO: pensare al bottone colorato-->
@@ -100,16 +100,16 @@
 
   <!-- breadcrumbs -->
   <div class="col-lg-8 mx-auto breadcrumbs">
-    <p>Servizi / Ripristino delle foreste</p>
+    <p id="breadcrumbs"> </p>
   </div>
 
   <!-- Title -->
 
-  <div class="container">
+  <div class="container" id="about">
     <div class="row">
 
       <div class="col-lg-8 mx-auto">
-        <h2 class="description-title">Ripristino delle foreste</h2>
+        <h2 class="description-title" id="description-title"></h2>
       </div>
     </div>
 
@@ -135,27 +135,21 @@
   <!-- Thumbnails to link to other pages -->
   <div id="all-events">
 
-
     <!-- Sezione 1: SERVIZIO -->
     <section class="event SER">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mx-auto deck">
 
-            <div class="card col-lg-10">
-              <img class="card-img-top img-fluid" src="../assets/img/services/Ripristino_servizio.png" alt="Ripristino">
-
+            <div class="card col-lg-10" id="service-image">
+              
             </div>
           </div>
           <div class="card col-lg-6">
             <div class="card-body">
-              <p class="lead description-text text-justify">
-                Lavoriamo per migliorare la salute delle nostre foreste urbane. Una sana diversità delle piante
-                autoctone è essenziale affinché l'ecosistema si adatti agli stress urbani come i cambiamenti climatici
-                e l'inquinamento. I volontari aiutano rimuovendo le piante invasive distruttive e sostituendole con
-                specie autoctone. La battaglia contro le piante invasive non finisce mai e abbiamo bisogno di aiuto!
-                Insieme possiamo proteggere l'eredità verde di Milano. Se vuoi saperne di più: </p>
-              <form action="mailto:alessandro.lazzaretti1@gmail.com" method="GET">
+              <p class="lead description-text text-justify" id="description-text">
+              </p>
+              <form action="mailto:info@milanogreen.it" method="GET">
                 <input class="my-submit" type="submit" value="Contatta il nostro referente" />
               </form>
             </div>
@@ -166,82 +160,16 @@
 
 
     <!-- SEZIONE 2: TEAM -->
-    <section class="event TEAM hidden">
-      <div class="card col lg-6">
-        <h2 class="description-title">
-          Team - Ripristino delle forseste </h2>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto deck">
-
-            <div class="card col-lg-3">
-              <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Filippo.png" alt="Filippo">
-              <div class="card-body">
-                <p class="card-text">
-                  <b> Filippo Pettine </b>
-                </p>
-
-              </div>
-            </div>
-
-            <div class="card col-lg-3">
-              <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/Cecilia.png"
-                alt="Cecilia" />
-              <div class="card-body">
-                <p class="card-text">
-                  <b> Cecilia Li </b>
-                </p>
-
-              </div>
-            </div>
-
-            <div class="card col-lg-3">
-              <img class="card-img-top img-fluid" src="../assets/img/association/staff_team/tony.png" alt="Tony" />
-              <div class="card-body">
-                <p class="card-text">
-                  <b> Tony Baviera </b>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="event TEAM hidden" id="related-people">
+     
+     
     </section>
 
     <!-- SEZIONE 3: Eventi correlati -->
 
-    <section class="event EVE hidden">
-      <div class="container">
-        <div class="card col lg-6">
-          <h2 class="description-title">
-            Eventi - Ripristino delle foreste </h2>
-        </div>
-        <div class="row justify-content-center">
+    <section class="event EVE hidden" id="related-events"> 
+     
 
-          <div class="col-lg-4 ">
-            <img src="../assets/img/events/quercianana.png" class="event-img">
-
-            <h1 class="event-title">Imparare le piante</h1>
-            <h2 class="event-time"> 28 Dicembre 2020, 10.00-12.00 </h2>
-          </div>
-
-          <div class="col-lg-4 ">
-            <img src="../assets/img/events/planting.png" class="event-img">
-
-            <h1 class="event-title">Visita al boschetto</h1>
-            <h2 class="event-time"> 28 Settembre 2020, 10.00-12.00 </h2>
-          </div>
-
-          <div class="col-lg-4 ">
-            <img src="../assets/img/events/verdeurbano.png" class="event-img">
-
-            <h1 class="event-title">Salviamo la Quercia Nana</h1>
-            <h2 class="event-time"> 28 Giugno 2020, 10.00-12.00 </h2>
-          </div>
-
-        </div>
-      </div>
     </section>
 
     <section id="zero-events" class="hidden">
@@ -250,6 +178,12 @@
       </div>
 
     </section>
+
+  <div class="container">
+    <a href="./services.html">
+      <button class="service-btn"> &#x2B06 Servizi </button>
+    </a>
+  </div>
 
     <!-- Footer wave svg element -->
     <div class="footer-mask">
@@ -272,38 +206,36 @@
 
 
 
-          <!--Footer navigation-->
-          <div class="footer-nav">
-            <h3>Navigation</h3>
-            <hr />
-
-            <div class="row justify-content-between pr-5">
-              <ul>
-                <li>
-                  <a href="../index.html">Home</a>
-                </li>
-                <li>
-                  <a href="#about">Associazione</a>
-                </li>
-                <li>
-                  <a href="./services.html">Servizi</a>
-              </ul>
-              <ul>
-                </li>
-                <li>
-                  <a href="./events.html">Eventi</a>
-                </li>
-                <li>
-                  <a href="./joinus.html">Unisciti a noi</a>
-                </li>
-                <li>
-                  <a href="./supportus">Supportaci</a>
-
-                </li>
-              </ul>
-            </div>
-
+      <!--Footer navigation {NOT HOME PAGE} -->
+      <div class="footer-nav">
+        <h3>Navigation</h3>
+        <hr />
+          <div class="row justify-content-between pr-5">
+            <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li >
+              <a href="./association.html">Associazione</a>
+            </li>
+            <li >
+              <a href="./services.html">Servizi</a>
+            </ul>
+            <ul>
+            </li>
+            <li>
+              <a href="./events.html">Eventi</a>
+            </li>
+            <li>
+              <a href="./joinus.html">Unisciti a noi</a>
+            </li>
+            <li>
+              <a href="./supportus.html">Supportaci</a>
+            </li>
+            </ul>
           </div>
+      </div>
+
 
           <!-- Social icons-->
           <ul class="social-ul">
@@ -338,10 +270,12 @@
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="../js/scrolling-nav.js"></script>
-    <script src="../js/fading-nav.js"></script>
-    <script src="../js/related.js"></script>
+    <script src="../assets/js/scrolling-nav.js"></script>
+    <script src="../assets/js/fading-nav.js"></script>
+    <script src="../assets/js/related.js"></script>
 
+    <!-- Filler -->
+    <script src="../assets/js/fillers/service_general.js"></script>
 </body>
 
 </html>
